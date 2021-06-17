@@ -8,6 +8,37 @@
   height: 100vh;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.LinkHover:hover + .hidden {
+  display: flex;
+}
+.navbar a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+}
+
+.headerLinks {
+  min-height: 10vh;
+  padding: 0 0.5rem;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -38,6 +69,20 @@
   text-decoration: none;
 }
 
+.titleBlue{
+  color: #0070f3;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.linkBlue{
+  display: inline-block;
+  color: #0070f3;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+}
 .title a:hover,
 .title a:focus,
 .title a:active {
@@ -74,7 +119,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1000px;
   margin-top: 3rem;
 }
 
@@ -88,6 +133,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 45%;
+  min-height: 300px;
 }
 
 .card:hover,
