@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../../styles/home.module.css";
+import styles from "../styles/home.module.css";
 
 export default function Home() {
   return (
@@ -13,12 +13,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Core-v4 Page</a>
+          Welcome to <a href="https://nextjs.org">Discord Page!</a>
         </h1>
 
         <p className={styles.description}>
           Get started by editing{" "}
-          <code className={styles.code}>pages/corev4.js</code>
+          <code className={styles.code}>pages/discordPage.js</code>
         </p>
 
         <div className={styles.grid}>
