@@ -1,7 +1,10 @@
-export default function callback() {
-    return(
-        <div>
-            <h1>You logged int!</h1>
-        </div>
-    );
+import { handleCallback } from '@auth0/nextjs-auth0';
+
+export default async function callback(req, res) {
+  try {
+    await handleCallback(req, res, { redirectTo: '/' });
+  } catch (error) {
+    console.error(error);
+    res.status(error.status || 500).end(error.message);
+  }
 }
