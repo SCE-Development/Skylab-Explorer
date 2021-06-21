@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/styles';
 const useStyles = makeStyles({
   whiteText: {
     color: 'white',
-  }
+  },
 });
 export default function Home() {
   const [visits, setVisits] = useState([
@@ -24,97 +24,75 @@ export default function Home() {
 
   return (
     // Building dashboard
-    <Grid
-      container
-      direction="column"
-      justify="center"
-      alignItems="center"
-      className = {classes.whiteText}
-    >
-      <Grid
-        item container
-        direction="row"
-        justify="space-between"
-        alignItems="center"
-      >
+    <Grid container direction="column" justify="center" alignItems="center" className={classes.whiteText}>
+      <Grid item container direction="row" justify="space-between" alignItems="center">
         <Grid item>
-          <Typography variant = "h3">
-          Dashboard
-          </Typography>
+          <Typography variant="h3">Dashboard</Typography>
         </Grid>
         <Grid item>
-          <Select className = {classes.whiteText} value = {'last seven days'}>
-            <MenuItem value = {'last seven days'} >Last seven days</MenuItem>
-            <MenuItem value = {'last 2 weeks'}>Last 2 weeks</MenuItem>
+          <Select className={classes.whiteText} value={'last seven days'}>
+            <MenuItem value={'last seven days'}>Last seven days</MenuItem>
+            <MenuItem value={'last 2 weeks'}>Last 2 weeks</MenuItem>
           </Select>
         </Grid>
       </Grid>
       <Grid item>
-        <CustomLineChart
-          title = {'Visits'}
-          data = {visits}
-          xLabel = "date"
-          dataKey = "quantity"
-        />
+        <CustomLineChart title={'Visits'} data={visits} xLabel="date" dataKey="quantity" />
       </Grid>
-      <Grid
-        item container
-        direction="row"
-        justify="flex-start"
-        alignItems="center">
+      <Grid item container direction="row" justify="flex-start" alignItems="center">
         <CustomLineChart
-          title = {'Visits'}
-          total = "3000"
-          data = {visits}
-          dataKey = "quantity"
-          isYAxis = {false}
-          width = {200}
-          height = {100}
+          title={'Visits'}
+          total="3000"
+          data={visits}
+          dataKey="quantity"
+          isYAxis={false}
+          width={200}
+          height={100}
         />
         <CustomLineChart
-          title = {'Unique visitors'}
-          total = "3000"
-          data = {visits}
-          dataKey = "quantity"
-          isYAxis = {false}
-          width = {200}
-          height = {100}
+          title={'Unique visitors'}
+          total="3000"
+          data={visits}
+          dataKey="quantity"
+          isYAxis={false}
+          width={200}
+          height={100}
         />
         <CustomLineChart
-          title = {'Page Views'}
-          total = "3000"
-          data = {visits}
-          dataKey = "quantity"
-          isYAxis = {false}
-          width = {200}
-          height = {100}
+          title={'Page Views'}
+          total="3000"
+          data={visits}
+          dataKey="quantity"
+          isYAxis={false}
+          width={200}
+          height={100}
         />
         <CustomLineChart
-          title = {'Average Visit Durations'}
-          total = "3000"
-          data = {visits}
-          dataKey = "quantity"
-          isYAxis = {false}
-          width = {200}
-          height = {100}
+          title={'Average Visit Durations'}
+          total="3000"
+          data={visits}
+          dataKey="quantity"
+          isYAxis={false}
+          width={200}
+          height={100}
         />
         <CustomLineChart
-          title = {'Bounce Rate '}
-          total = "3000"
-          data = {visits}
-          dataKey = "quantity"
-          isYAxis = {false}
-          width = {200}
-          height = {100}
+          title={'Bounce Rate '}
+          total="3000"
+          data={visits}
+          dataKey="quantity"
+          isYAxis={false}
+          width={200}
+          height={100}
         />
         <CustomLineChart
-          title = {'Pages Per Visit'}
-          total = "3000"
-          data = {visits}
-          dataKey = "quantity"
-          isYAxis = {false}
-          width = {200}
-          height = {100}
+          title={'Pages Per Visit'}
+          total="3000"
+          data={visits}
+          dataKey="quantity"
+          isYAxis={false}
+          width={200}
+          height={100}
         />
       </Grid>
     </Grid>
