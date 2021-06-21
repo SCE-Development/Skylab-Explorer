@@ -1,6 +1,6 @@
 import Head from "next/head";
 import VercelLogo from "next/image";
-import styles from "../../styles/home.module.css";
+import Styles from "../../styles/home.module.css";
 
 export default function analyticsDiscord() {
   return (

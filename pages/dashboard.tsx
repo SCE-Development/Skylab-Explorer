@@ -1,8 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/home.module.css";
+import Styles from "../styles/home.module.css";
 import NextLink from "next/link";
 
-export default function dashboard() {
+export default function Dashboard() {
   return (
     <div>
     <div className={styles.navbar}>
