@@ -5,7 +5,7 @@ import NextLink from "next/link";
 export default function Dashboard() {
   return (
     <div>
-    <div className={styles.navbar}>
+    <div className={Styles.navbar}>
 
        <NextLink href="/dashboard">
           <a>Analytics</a>
@@ -20,8 +20,8 @@ export default function Dashboard() {
         </NextLink>
     </div>
 
-  <div className={styles.container}>
-        <h1 className={styles.titleBlue}>
+  <div className={Styles.container}>
+        <h1 className={Styles.titleBlue}>
           Welcome to The Dashboard
         </h1>
 </div>
