@@ -4,7 +4,7 @@ import { Grid } from '@material-ui/core';
 import { useState } from 'react';
 import CoreV4AppBar from '../../Components/CoreV4AppBar';
 
-export default function AnalyticsCoreV4() {
+export default function AnalyticsCore() {
   const [data, setData] = useState([
     { date: '11/28', quantity: 10 },
     { date: '11/29', quantity: 9 },
