@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Styles from "../styles/home.module.css";
+import Image from "next/image";
+import styles from "../styles/home.module.css";
 import NextLink from "next/link";
-
-export default function Dashboard() {
+export default function Home() {
   return (
     <div>
-    <div className={Styles.navbar}>
+    <div className={styles.navbar}>
 
        <NextLink href="/dashboard">
           <a>Analytics</a>
@@ -20,8 +20,8 @@ export default function Dashboard() {
         </NextLink>
     </div>
 
-  <div className={Styles.container}>
-        <h1 className={Styles.titleBlue}>
+  <div className={styles.container}>
+        <h1 className={styles.titleBlue}>
           Welcome to The Dashboard
         </h1>
 </div>
