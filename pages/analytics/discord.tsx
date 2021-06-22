@@ -2,7 +2,7 @@ import Head from "next/head";
 import VercelLogo from "next/image";
 import Styles from "../../styles/home.module.css";
 
-export default function analyticsDiscord() {
+export default function AnalyticsDiscord() {
   return (
     <div className={Styles.container}>
       <Head>
