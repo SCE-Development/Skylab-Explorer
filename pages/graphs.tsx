@@ -1,7 +1,12 @@
 import SampleLineChart from '../Components/SampleLineChart';
+import SimpleAreaChart from '../Components/SimpleAreaChart';
 
 export default function Graphs() {
     return(
-        <SampleLineChart/>
+        <div>
+            <SampleLineChart/>
+            <h3>Hi</h3>
+            <SimpleAreaChart />
+        </div>
     );
 }
