@@ -11,23 +11,14 @@ export default function Landing() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-<<<<<<< HEAD:pages/landing.tsx
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-=======
       <main className={Styles.main}>
         <h1 className={Styles.title}>
->>>>>>> a1a19212761294e0eca34b86ed2b5383f0505a7b:pages/index.tsx
           Welcome to <a href="https://nextjs.org"> Landing Page!</a>
         </h1>
 
         <p className={Styles.description}>
           Get started by editing{" "}
-<<<<<<< HEAD:pages/landing.tsx
-          <code className={styles.code}>pages/landing.tsx</code>
-=======
           <code className={Styles.code}>pages/landing.tsx</code>
->>>>>>> a1a19212761294e0eca34b86ed2b5383f0505a7b:pages/index.tsx
         </p>
 
         <div className={Styles.grid}>
