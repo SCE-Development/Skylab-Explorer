@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from "recharts";
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 
 export default function SampleLineChart() {
     const [data, setData] = useState([
