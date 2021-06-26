@@ -4,7 +4,13 @@ import CustomLineChart from '../Components/CustomLineChart';
 import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
+import { makeStyles } from '@material-ui/styles';
 
+const useStyles = makeStyles({
+  whiteText: {
+    color: 'white',
+  }
+});
 export default function Home() {
   const [visits, setVisits] = useState([
     { date: '11/28', quantity: 10 },
@@ -14,6 +20,8 @@ export default function Home() {
     { date: '12/2', quantity: 15 },
   ]);
 
+  const classes = useStyles();
+
   return (
     // Building dashboard
     <Grid
@@ -21,6 +29,7 @@ export default function Home() {
       direction="column"
       justify="center"
       alignItems="center"
+      className = {classes.whiteText}
     >
       <Grid
         item container
@@ -34,8 +43,8 @@ export default function Home() {
           </Typography>
         </Grid>
         <Grid item>
-          <Select>
-            <MenuItem value = {'last seven days'}>Last seven days</MenuItem>
+          <Select className = {classes.whiteText}>
+            <MenuItem value = {'last seven days'} >Last seven days</MenuItem>
             <MenuItem value = {'last 2 weeks'}>Last 2 weeks</MenuItem>
           </Select>
         </Grid>
@@ -55,6 +64,7 @@ export default function Home() {
         alignItems="center">
         <CustomLineChart
           title = {'Visits'}
+          total = "3000"
           data = {visits}
           dataKey = "quantity"
           isYAxis = {false}
@@ -63,6 +73,7 @@ export default function Home() {
         />
         <CustomLineChart
           title = {'Unique visitors'}
+          total = "3000"
           data = {visits}
           dataKey = "quantity"
           isYAxis = {false}
@@ -71,6 +82,7 @@ export default function Home() {
         />
         <CustomLineChart
           title = {'Page Views'}
+          total = "3000"
           data = {visits}
           dataKey = "quantity"
           isYAxis = {false}
@@ -79,6 +91,7 @@ export default function Home() {
         />
         <CustomLineChart
           title = {'Average Visit Durations'}
+          total = "3000"
           data = {visits}
           dataKey = "quantity"
           isYAxis = {false}
@@ -87,6 +100,7 @@ export default function Home() {
         />
         <CustomLineChart
           title = {'Bounce Rate '}
+          total = "3000"
           data = {visits}
           dataKey = "quantity"
           isYAxis = {false}
@@ -95,6 +109,7 @@ export default function Home() {
         />
         <CustomLineChart
           title = {'Pages Per Visit'}
+          total = "3000"
           data = {visits}
           dataKey = "quantity"
           isYAxis = {false}
