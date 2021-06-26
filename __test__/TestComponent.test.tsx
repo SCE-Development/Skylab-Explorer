@@ -3,9 +3,9 @@
  */
 
 import { render, screen } from '@testing-library/react';
+import SampleLineChart from '../Components/SampleLineChart';
+import SimpleAreaChart from '../Components/SimpleAreaChart';
 import TestComponent from '../Components/TestComponent';
-import Home from '../pages/dashboard';
-import Landing from '../pages/landing';
 
 // since there's not really anything to test, we will just render each component
 describe('App', () => {
@@ -15,14 +15,15 @@ describe('App', () => {
     });
 });
 
-// Test render Landing or Home will not work since we import css
-// describe('Render pages', () => {
-//     test('Render landing', () => {
-//         render(<Landing />);
-//     });
+describe('Test graphing chart', () => {
+    test('render sample line chart', () => {
+        render(<SampleLineChart />);
+    });
+    test('render simple area chart', () => {
+        render(<SimpleAreaChart />);
+    });
+});
 
-//     test('Render Dashboard/Home', () => {
-//         render(<Home />);
-//     });
-// });
+// Test render Landing or Home will not work since we import css
+
 
