@@ -43,7 +43,7 @@ export default function Home() {
           </Typography>
         </Grid>
         <Grid item>
-          <Select className = {classes.whiteText}>
+          <Select className = {classes.whiteText} value = {'last seven days'}>
             <MenuItem value = {'last seven days'} >Last seven days</MenuItem>
             <MenuItem value = {'last 2 weeks'}>Last 2 weeks</MenuItem>
           </Select>
