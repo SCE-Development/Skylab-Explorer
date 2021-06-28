@@ -7,7 +7,8 @@
     "build": "next build",
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
     "start": "next start",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "test": "jest"
   },
   "dependencies": {
     "next": "latest",
@@ -16,7 +17,10 @@
     "recharts": "^2.0.9"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.14.6",
+    "@testing-library/react": "^12.0.0",
     "@types/eslint": "^7",
+    "@types/jest": "^26.0.23",
     "@types/node": "^15.0.2",
     "@types/prop-types": "^15",
     "@types/react": "^17.0.5",
@@ -27,6 +31,7 @@
     "eslint-plugin-react": "latest",
     "eslint-plugin-react-hooks": "latest",
     "husky": "^6.0.0",
+    "jest": "^27.0.6",
     "prop-types": "^15.7.2",
     "typescript": "^4.2.4"
   }
