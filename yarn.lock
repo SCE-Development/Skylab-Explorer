@@ -421,7 +421,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.4.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.7":
+=======
+"@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.4.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.7":
+>>>>>>> added basic calendars, working on changing color rn
   version: 7.14.6
   resolution: "@babel/runtime@npm:7.14.6"
   dependencies:
@@ -469,6 +473,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@babel/types@npm:^7.0.0, @babel/types@npm:^7.14.5, @babel/types@npm:^7.3.0, @babel/types@npm:^7.3.3, @babel/types@npm:^7.8.3":
   version: 7.14.5
   resolution: "@babel/types@npm:7.14.5"
@@ -486,6 +491,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> added basic calendars, working on changing color rn
 "@emotion/hash@npm:^0.8.0":
   version: 0.8.0
   resolution: "@emotion/hash@npm:0.8.0"
@@ -543,6 +550,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.1.0
   resolution: "@istanbuljs/load-nyc-config@npm:1.1.0"
@@ -777,6 +785,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> added basic calendars, working on changing color rn
 "@material-ui/core@npm:^4.11.4":
   version: 4.11.4
   resolution: "@material-ui/core@npm:4.11.4"
@@ -804,6 +814,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@material-ui/icons@npm:^4.11.2":
   version: 4.11.2
   resolution: "@material-ui/icons@npm:4.11.2"
@@ -821,6 +832,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> added basic calendars, working on changing color rn
 "@material-ui/styles@npm:^4.11.4":
   version: 4.11.4
   resolution: "@material-ui/styles@npm:4.11.4"
@@ -2545,6 +2558,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "co@npm:^4.6.0":
   version: 4.6.0
   resolution: "co@npm:4.6.0"
@@ -2552,6 +2566,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> added basic calendars, working on changing color rn
 "code-point-at@npm:^1.0.0":
   version: 1.1.0
   resolution: "code-point-at@npm:1.1.0"
@@ -2806,6 +2822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "cssom@npm:^0.4.4":
   version: 0.4.4
   resolution: "cssom@npm:0.4.4"
@@ -2829,6 +2846,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> added basic calendars, working on changing color rn
 "csstype@npm:^2.5.2":
   version: 2.6.17
   resolution: "csstype@npm:2.6.17"
@@ -4048,6 +4067,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "html-encoding-sniffer@npm:^2.0.1":
   version: 2.0.1
   resolution: "html-encoding-sniffer@npm:2.0.1"
@@ -4064,6 +4084,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> added basic calendars, working on changing color rn
 "http-cache-semantics@npm:^4.0.0, http-cache-semantics@npm:^4.1.0":
   version: 4.1.0
   resolution: "http-cache-semantics@npm:4.1.0"
@@ -4219,6 +4241,15 @@ __metadata:
   version: 0.1.4
   resolution: "imurmurhash@npm:0.1.4"
   checksum: 34d414d789286f6ef4d2b954c76c7df40dd7cabffef9b9959c8bd148677e98151f4fa5344aae2e3ad2b62308555ccbba3022e535a3e24288c9babb1308e35532
+  languageName: node
+  linkType: hard
+
+"indefinite-observable@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "indefinite-observable@npm:2.0.1"
+  dependencies:
+    symbol-observable: 1.2.0
+  checksum: 07f6933c97fe781fe514a26353682b39fc86128860c54c210d818cff39901c8eb7dda47efa84c7ce631db97b14da421f3798dbd1898175f7cda73243921d1511
   languageName: node
   linkType: hard
 
@@ -4838,6 +4869,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "jest-matcher-utils@npm:^27.0.6":
   version: 27.0.6
   resolution: "jest-matcher-utils@npm:27.0.6"
@@ -4847,6 +4879,19 @@ __metadata:
     jest-get-type: ^27.0.6
     pretty-format: ^27.0.6
   checksum: c5299dd3046b1d3a2a20d7ebad3ddd52c2ca5c8e3852b77b51ce57e07f3305626e71118b6ddcb35f75f94c503013706852c1476064df70255752bc5e5caabbca
+=======
+"is-in-browser@npm:^1.0.2, is-in-browser@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "is-in-browser@npm:1.1.3"
+  checksum: 2696bb61677f15181c32a552c0d1aeea33fc8a5c945e2f21e6673207b256b6cf8170a94f6e9f4e242dc943aaa4325eacad709ac1ec6fd82767f3367755bab5ce
+  languageName: node
+  linkType: hard
+
+"is-lambda@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "is-lambda@npm:1.0.1"
+  checksum: 669ea37e8fafa800d076e7e7c64eadc9fd2a0607a3bc67e602d37092f2fec91c29929cdeec94e694607a88a2e0bdc7f8e122a9819dacadf05a9c5767c9672eb7
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
@@ -5233,6 +5278,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "json5@npm:^2.1.2":
   version: 2.2.0
   resolution: "json5@npm:2.2.0"
@@ -5252,30 +5298,59 @@ __metadata:
     hyphenate-style-name: ^1.0.3
     jss: 10.7.1
   checksum: 92f4befdba356009b24a02a40abdc82209105939fefcaa1a8443d2cd5d218f072bc7131a74c13607b57d2caefd144509e0c6f04777b59c8ca3e84afbcc8ce9e2
+=======
+"jss-plugin-camel-case@npm:^10.5.1":
+  version: 10.6.0
+  resolution: "jss-plugin-camel-case@npm:10.6.0"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    hyphenate-style-name: ^1.0.3
+    jss: 10.6.0
+  checksum: dd813c817fda65891fdb370085870142a08be1e1a87c92bacca2d896b8d8fe951e89300f0fe83778fcf4594e5f3c7f471544a48ed8419c5231b336232d9f2ac1
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
 "jss-plugin-default-unit@npm:^10.5.1":
+<<<<<<< HEAD
   version: 10.7.1
   resolution: "jss-plugin-default-unit@npm:10.7.1"
   dependencies:
     "@babel/runtime": ^7.3.1
     jss: 10.7.1
   checksum: 5d372af4e198f538273644fa1e23e0f68be15f68b21ce704e0dff250aef9287daa3d0f28ffae1f1db1e69d570308b8fbd46d78218400728a8897639530cf0417
+=======
+  version: 10.6.0
+  resolution: "jss-plugin-default-unit@npm:10.6.0"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    jss: 10.6.0
+  checksum: 3eff0d8f11b0bb783f27c2ba17d7d7049c45bb1cac57db339f23839fe9ef62aacaf24754dbb1e0f84533ca4a3b603ecbd2c4affae44eae60aef39d83945dcf3a
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
 "jss-plugin-global@npm:^10.5.1":
+<<<<<<< HEAD
   version: 10.7.1
   resolution: "jss-plugin-global@npm:10.7.1"
   dependencies:
     "@babel/runtime": ^7.3.1
     jss: 10.7.1
   checksum: ee932eaaed069357505cfe5c2c046d8843c07ce752c558f54621474623006d25cffae89acb92b76aefc592dfe910981d539d69ef67e19123c3106edea95b900b
+=======
+  version: 10.6.0
+  resolution: "jss-plugin-global@npm:10.6.0"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    jss: 10.6.0
+  checksum: 856689e247f414e82348be91c38132b523db959a2b2a46f07a40d19d104917c678609ce71775da383e7bc4f06511ec314a3e9c41964e24face5618466ded9910
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
 "jss-plugin-nested@npm:^10.5.1":
+<<<<<<< HEAD
   version: 10.7.1
   resolution: "jss-plugin-nested@npm:10.7.1"
   dependencies:
@@ -5283,20 +5358,39 @@ __metadata:
     jss: 10.7.1
     tiny-warning: ^1.0.2
   checksum: a65bce15b11b7a43b30944400fcc036528ec9796f426998b987dae34a864e30a2814ed0af68861f210d83df42a08230071dc5de5df90877df3c8b3c11e17655a
+=======
+  version: 10.6.0
+  resolution: "jss-plugin-nested@npm:10.6.0"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    jss: 10.6.0
+    tiny-warning: ^1.0.2
+  checksum: 80b82413535ad7d95f3637f7a1cced7afe16f992a99bc89be462e1be07f1e74b9b1912bda53e61649bfe191726678fd0950d5f740db9983d8b8c845c9b1b96ae
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
 "jss-plugin-props-sort@npm:^10.5.1":
+<<<<<<< HEAD
   version: 10.7.1
   resolution: "jss-plugin-props-sort@npm:10.7.1"
   dependencies:
     "@babel/runtime": ^7.3.1
     jss: 10.7.1
   checksum: 5bc9e3bbbbc1a0c1f7ff7b7950dc975112c36c65052669c19d9d46f0bc93a84b5162f759c718d67dfe6c3ca352567c827ef562fd0957f91c5f3ce8c55555ae2c
+=======
+  version: 10.6.0
+  resolution: "jss-plugin-props-sort@npm:10.6.0"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    jss: 10.6.0
+  checksum: dc4fe4065c6a217272e5045e2037d5e131099aaa9d67c33013d3494a55fdad47076c5811047dabf711473e7351cee573e3370a09abd4f0c120288593ac4d52ab
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
 "jss-plugin-rule-value-function@npm:^10.5.1":
+<<<<<<< HEAD
   version: 10.7.1
   resolution: "jss-plugin-rule-value-function@npm:10.7.1"
   dependencies:
@@ -5304,10 +5398,20 @@ __metadata:
     jss: 10.7.1
     tiny-warning: ^1.0.2
   checksum: 593b71ac746ed53c2b32ab636cd5cd2fb682faa29235fec209831b81678979a5dd12ad7a25419ec7b887ff7944e4687fcb2fcde31d358acd5dd540c286cdfbb9
+=======
+  version: 10.6.0
+  resolution: "jss-plugin-rule-value-function@npm:10.6.0"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    jss: 10.6.0
+    tiny-warning: ^1.0.2
+  checksum: 85bbcc89acc15b2af0859d5bdbec9b28b2d6ef182aac2f7c3fa1e787797bddce7b7a091fd3a2f3a698b5c5f11ad6ac7373848c206fb89950fc9b3e12a4f65a82
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
 "jss-plugin-vendor-prefixer@npm:^10.5.1":
+<<<<<<< HEAD
   version: 10.7.1
   resolution: "jss-plugin-vendor-prefixer@npm:10.7.1"
   dependencies:
@@ -5327,6 +5431,28 @@ __metadata:
     is-in-browser: ^1.1.3
     tiny-warning: ^1.0.2
   checksum: b8343c282ecd73a285aff664afdc11c3a1d83705d10f45b8eb7c27521ce25de0b2f6bd153adb9bf67a89b92de3bca4d732b458d2af61d3e99337f1926cd3cede
+=======
+  version: 10.6.0
+  resolution: "jss-plugin-vendor-prefixer@npm:10.6.0"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    css-vendor: ^2.0.8
+    jss: 10.6.0
+  checksum: c729b4fa622512cbaff712af62e611e61908686fa47cf31843a03dfe22004eef684ee3264b8b90c60946f7efc20fdaad0246f1f73fddf51d60614e27e9882cbd
+  languageName: node
+  linkType: hard
+
+"jss@npm:10.6.0, jss@npm:^10.5.1":
+  version: 10.6.0
+  resolution: "jss@npm:10.6.0"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    csstype: ^3.0.2
+    indefinite-observable: ^2.0.1
+    is-in-browser: ^1.1.3
+    tiny-warning: ^1.0.2
+  checksum: 063877ab763dc3cc808ba1c198aaafa24ceb7b959fdfb524cab2c08b62c918e988f968315053ea86149705e8eaf534afba3a243df381560e3eee389deac6dbec
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
@@ -5353,12 +5479,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "kheer-template@workspace:."
   dependencies:
+<<<<<<< HEAD
     "@babel/runtime": ^7.14.6
     "@fontsource/roboto": ^4.4.5
     "@material-ui/core": ^4.11.4
     "@material-ui/icons": ^4.11.2
     "@material-ui/styles": ^4.11.4
     "@testing-library/react": ^12.0.0
+=======
+    "@material-ui/core": ^4.11.4
+>>>>>>> added basic calendars, working on changing color rn
     "@types/eslint": ^7
     "@types/jest": ^26.0.23
     "@types/node": ^15.0.2
@@ -6704,7 +6834,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "react-is@npm:^16.8.0 || ^17.0.0, react-is@npm:^17.0.1":
+=======
+"react-is@npm:^16.8.0 || ^17.0.0":
+>>>>>>> added basic calendars, working on changing color rn
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 3eff23f410d40ab9bc5177f147a92c7f42c356a21ecea340e0554566956d67e5e1ba56f26cc7fa22339ac3c7151744177bd6305eaa26d3cbf15f354358c9d9b6
@@ -7615,6 +7749,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "supports-hyperlinks@npm:^2.0.0":
   version: 2.2.0
   resolution: "supports-hyperlinks@npm:2.2.0"
@@ -7629,6 +7764,12 @@ resolve@^2.0.0-next.3:
   version: 3.2.4
   resolution: "symbol-tree@npm:3.2.4"
   checksum: 0b9af4e5f005f9f0b9c916d91a1b654422ffa49ef09c5c4b6efa7a778f63976be9f410e57db1e9ea7576eea0631a34b69a5622674aa92a60a896ccf2afca87a7
+=======
+"symbol-observable@npm:1.2.0":
+  version: 1.2.0
+  resolution: "symbol-observable@npm:1.2.0"
+  checksum: 268834a1d4cba19d40f367e5c2755f612969c8418e43a3be17408e392802a667f8bb542893440d58a080a8ea8da05ea98e27e472b9f4ff6fbda78a21a1a41c53
+>>>>>>> added basic calendars, working on changing color rn
   languageName: node
   linkType: hard
 
@@ -7711,6 +7852,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "tmpl@npm:1.0.x":
   version: 1.0.4
   resolution: "tmpl@npm:1.0.4"
@@ -7718,6 +7860,8 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> added basic calendars, working on changing color rn
 "to-arraybuffer@npm:^1.0.0":
   version: 1.0.1
   resolution: "to-arraybuffer@npm:1.0.1"
