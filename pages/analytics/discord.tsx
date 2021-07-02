@@ -3,14 +3,19 @@ import { Grid } from "@material-ui/core";
 
 export default function AnalyticsDiscord() {
   return (
-    <Grid
+    <div>
+      <h1>Key Metrics</h1>
+      <Grid
       container
       direction="row"
-      justify="center"
-      alignItems="center"
-    >
-      <CustomKeyMetric isUp = { true }/>
-      <CustomKeyMetric isUp = { false }/>
-    </Grid>
+      // justify="flex-start"
+      // alignItems="flex-start"
+      >
+        <CustomKeyMetric isUp = { true }/>
+        <CustomKeyMetric isUp = { false }/>
+        <CustomKeyMetric isUp = { false }/>
+      </Grid>
+      <h1>Graphs</h1>
+    </div>
   );
 }

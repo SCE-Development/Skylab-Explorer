@@ -1,46 +1,28 @@
 import { Container, Grid, makeStyles } from "@material-ui/core";
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import { withStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
     roundContainer: {
         borderRadius: '20px',
         backgroundColor: 'grey',
         width: 'fit-content',
-        padding: '10px',
-        maxWidth: '15em'
+        maxWidth: '14em',
     },
     green: {
         color: 'green',
         fontSize: '5em'
     },
     red: {
-        color: 'red'
+        color: 'red',
+        fontSize: '5em'
     }
 });
 
-const styles = {
-    roundContainer: {
-        borderRadius: '20px',
-        backgroundColor: 'grey',
-        width: 'fit-content',
-        padding: '10px',
-        maxWidth: '15em'
-    },
-    green: {
-        color: 'green',
-        fontSize: '5em'
-    },
-    red: {
-        color: 'red'
-    }
-};
-
-function CustomKeyMetric({ isUp, classes }) {
+export default function CustomKeyMetric({ isUp }) {
     const style = useStyles();
     return(
-        <Container className = {classes.roundContainer}>
+        <Container className = {style.roundContainer}>
             <h3>Commands made</h3>
             <Grid
                 container
@@ -51,8 +33,8 @@ function CustomKeyMetric({ isUp, classes }) {
                 <h1>12</h1>
                 {
                     isUp
-                    ? <ArrowDropUpIcon className = {classes.green} />
-                    : <ArrowDropDownIcon className = {classes.green} />
+                    ? <ArrowDropUpIcon className = {style.green} />
+                    : <ArrowDropDownIcon className = {style.red} />
                 }
             </Grid>
             <h4>+30.0% (3) Better compared to last week</h4>
@@ -60,4 +42,3 @@ function CustomKeyMetric({ isUp, classes }) {
     );
 }
 
-export default withStyles(styles)(CustomKeyMetric);
