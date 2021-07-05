@@ -16,4 +16,4 @@ describe('Test graphing chart', () => {
         render(<SimpleAreaChart />);
     });
 });
-// Test render Landing or Home will not work since we import css
+// Cannot test file that import css

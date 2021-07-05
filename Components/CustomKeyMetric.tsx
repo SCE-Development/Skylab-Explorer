@@ -7,7 +7,7 @@ const useStyles = makeStyles({
         borderRadius: '20px',
         backgroundColor: 'grey',
         width: 'fit-content',
-        maxWidth: '14em',
+        maxWidth: '15em',
     },
     green: {
         color: 'green',
@@ -19,18 +19,18 @@ const useStyles = makeStyles({
     }
 });
 
-export default function CustomKeyMetric({ isUp }) {
+export default function CustomKeyMetric({ title = "Default title", number = 12, isUp }) {
     const style = useStyles();
     return(
         <Container className = {style.roundContainer}>
-            <h3>Commands made</h3>
+            <h3>{title}</h3>
             <Grid
                 container
                 direction="row"
                 justify="center"
                 alignItems="center"
             >
-                <h1>12</h1>
+                <h1>{number}</h1>
                 {
                     isUp
                     ? <ArrowDropUpIcon className = {style.green} />
