@@ -9,11 +9,11 @@ const useStyles = makeStyles({
         width: 'fit-content',
         maxWidth: '15em',
     },
-    green: {
+    metricUp: {
         color: 'green',
         fontSize: '5em'
     },
-    red: {
+    metricDown: {
         color: 'red',
         fontSize: '5em'
     }
@@ -33,8 +33,8 @@ export default function CustomKeyMetric({ title = "Default title", number = 12, 
                 <h1>{number}</h1>
                 {
                     isUp
-                    ? <ArrowDropUpIcon className = {style.green} />
-                    : <ArrowDropDownIcon className = {style.red} />
+                    ? <ArrowDropUpIcon className = {style.metricUp} />
+                    : <ArrowDropDownIcon className = {style.metricDown} />
                 }
             </Grid>
             <h4>+30.0% (3) Better compared to last week</h4>
