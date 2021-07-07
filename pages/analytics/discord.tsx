@@ -1,5 +1,7 @@
 import CustomKeyMetric from "../../Components/CustomKeyMetric";
 import CustomLineChart from "../../Components/CustomLineChart";
+import DropdownFrequency from "../../Components/DropdownFrequency";
+import CustomDatePicker from "../../Components/CustomDatePicker";
 import { Grid } from "@material-ui/core";
 import { useState } from "react";
 
@@ -14,6 +16,8 @@ export default function AnalyticsDiscord() {
   return (
     <div>
       <h1>SCE Analytics</h1>
+      <DropdownFrequency />
+      {/* <CustomDatePicker /> */}
       <h1>Key Metrics</h1>
       <Grid
       container
