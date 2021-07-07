@@ -21,7 +21,6 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: 'Quicksand',
     allVariants: {
-      // default text color: grey, bolded
      color: '#CDCDCD',
       fontWeight: 'bold',
     },
