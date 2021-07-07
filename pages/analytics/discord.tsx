@@ -14,7 +14,7 @@ export default function AnalyticsDiscord() {
   ]);
   return (
     <div>
-      <DiscordAppBar></DiscordAppBar>
+      <DiscordAppBar />
       <h1>SCE Analytics</h1>
       <h1>Key Metrics</h1>
       <Grid
