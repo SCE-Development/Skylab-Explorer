@@ -15,8 +15,6 @@ export default function Landing() {
         <Button style={{ maxWidth: '150px', maxHeight: '75px', minWidth: '150px', minHeight: '75px' }}>
           <h1>Login</h1>
         </Button>
-        <br></br>
-        <Button>Login2</Button>
       </Grid>
   );
 }
