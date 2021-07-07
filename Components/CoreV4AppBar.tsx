@@ -62,7 +62,7 @@ export default function CoreV4AppBar() {
           <WhiteTypography variant="h1" style={{ marginRight: 20 }} display="inline">
             SCE Analytics
           </WhiteTypography>
-          <CoreV4Typography variant="h2" display="inline">
+          <CoreV4Typography variant="h3" display="inline">
             Core-V4
           </CoreV4Typography>
           </div>

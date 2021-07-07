@@ -60,7 +60,7 @@ export default function DiscordAppBar() {
           <WhiteTypography variant="h1" style={{ marginRight: 20 }} display="inline">
             SCE Analytics
           </WhiteTypography>
-          <DiscordTypography variant="h2" display="inline">
+          <DiscordTypography variant="h3" display="inline">
             Discord
           </DiscordTypography>
           </div>
