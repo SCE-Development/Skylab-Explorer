@@ -40,7 +40,6 @@ const theme = createMuiTheme({
   },
   props: {
     MuiButton: {
-      // disableRipple: true,
       variant: "contained",
     }
   }
