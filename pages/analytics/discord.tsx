@@ -2,6 +2,7 @@ import CustomKeyMetric from "../../Components/CustomKeyMetric";
 import CustomLineChart from "../../Components/CustomLineChart";
 import { Grid } from "@material-ui/core";
 import { useState } from "react";
+import DiscordAppBar from "../../Components/DiscordAppBar";
 
 export default function AnalyticsDiscord() {
   const [data, setData] = useState([
@@ -13,6 +14,7 @@ export default function AnalyticsDiscord() {
   ]);
   return (
     <div>
+      <DiscordAppBar></DiscordAppBar>
       <h1>SCE Analytics</h1>
       <h1>Key Metrics</h1>
       <Grid
