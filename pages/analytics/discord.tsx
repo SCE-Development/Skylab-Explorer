@@ -16,8 +16,26 @@ export default function AnalyticsDiscord() {
   return (
     <div>
       <h1>SCE Analytics</h1>
-      <DropdownFrequency />
-      {/* <CustomDatePicker /> */}
+      <Grid
+        container
+        direction = "row"
+      >
+        <Grid item>
+          <DropdownFrequency />
+        </Grid>
+        <Grid item>
+          <h1>From</h1>
+        </Grid>
+        <Grid item>
+          <CustomDatePicker />
+        </Grid>
+        <Grid item>
+          <h1>To</h1>
+        </Grid>
+        <Grid item>
+          <CustomDatePicker />
+        </Grid>
+      </Grid>
       <h1>Key Metrics</h1>
       <Grid
       container
