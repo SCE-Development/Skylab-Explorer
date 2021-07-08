@@ -2,7 +2,7 @@ import CustomKeyMetric from "../../Components/CustomKeyMetric";
 import CustomLineChart from "../../Components/CustomLineChart";
 import DropdownFrequency from "../../Components/DropdownFrequency";
 import CustomDatePicker from "../../Components/CustomDatePicker";
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import { useState } from "react";
 
 export default function AnalyticsDiscord() {
@@ -19,22 +19,17 @@ export default function AnalyticsDiscord() {
       <Grid
         container
         direction = "row"
+        justify="space-between" alignItems="center"
       >
-        <Grid item>
-          <DropdownFrequency />
-        </Grid>
-        <Grid item>
-          <h1>From</h1>
-        </Grid>
-        <Grid item>
-          <CustomDatePicker />
-        </Grid>
-        <Grid item>
-          <h1>To</h1>
-        </Grid>
-        <Grid item>
-          <CustomDatePicker />
-        </Grid>
+        <DropdownFrequency />
+        <Typography variant="h5" >
+          From
+        </Typography>
+        <CustomDatePicker />
+        <Typography variant="h5" >
+            To
+        </Typography>
+        <CustomDatePicker />
       </Grid>
       <h1>Key Metrics</h1>
       <Grid
