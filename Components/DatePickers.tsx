@@ -10,19 +10,23 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: 200,
+    color: 'primary',
+    background: '#2c2f33',
   },
 }));
 export default function DatePickers() {
   const classes = useStyles();
+  const [date, setDate] = useState('2020-05-28');
 
   return (
     <form className={classes.container} noValidate>
       <TextField
         color="secondary"
         id="date"
-        label="Pick an end Date"
         type="date"
         defaultValue="2020-05-24"
+        value={date}
+        onChange={(e) => setDate(e.target.value)}
         className={classes.textField}
         InputLabelProps={{
           shrink: true,

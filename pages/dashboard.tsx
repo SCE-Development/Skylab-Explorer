@@ -5,12 +5,16 @@ import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import { makeStyles } from '@material-ui/styles';
-
+import DatePickers from '../Components/DatePickers';
 const useStyles = makeStyles({
   whiteText: {
     color: 'white',
   },
+  dateComponent: {
+    color: 'white',
+  },
 });
+
 export default function Home() {
   const [visits, setVisits] = useState([
     { date: '11/28', quantity: 10 },
@@ -20,6 +24,7 @@ export default function Home() {
     { date: '12/2', quantity: 15 },
   ]);
 
+  const [startDate, setStartDate] = useState('2020-05-24');
   const classes = useStyles();
 
   return (
@@ -34,6 +39,20 @@ export default function Home() {
             <MenuItem value={'last seven days'}>Last seven days</MenuItem>
             <MenuItem value={'last 2 weeks'}>Last 2 weeks</MenuItem>
           </Select>
+        </Grid>
+      </Grid>
+      <Grid item container direction="row" justify="center" alignItems="center">
+        <Grid item>
+          <h5>From </h5>
+        </Grid>
+        <Grid item>
+          <DatePickers></DatePickers>
+        </Grid>
+        <Grid item>
+          <h5>To </h5>
+        </Grid>
+        <Grid item>
+          <DatePickers></DatePickers>
         </Grid>
       </Grid>
       <Grid item>
