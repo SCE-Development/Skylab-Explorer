@@ -10,6 +10,9 @@ const useStyles = makeStyles({
   whiteText: {
     color: 'white',
   },
+  dateComponent: {
+    color: 'white',
+  },
 });
 
 export default function Home() {
