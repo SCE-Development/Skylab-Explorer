@@ -964,12 +964,12 @@ __metadata:
   linkType: hard
 
 "@nodelib/fs.walk@npm:^1.2.3":
-  version: 1.2.7
-  resolution: "@nodelib/fs.walk@npm:1.2.7"
+  version: 1.2.8
+  resolution: "@nodelib/fs.walk@npm:1.2.8"
   dependencies:
     "@nodelib/fs.scandir": 2.1.5
     fastq: ^1.6.0
-  checksum: f5286c39c2f9cc0e89b2cbee6b735c5cf572c37f9c0a47a16ce3c1d9ba5d488f3153976ceb1b984ad09dbd8d1de620fab3e7b0ef2b64a006267d0895a16ce95c
+  checksum: 190c643f156d8f8f277bf2a6078af1ffde1fd43f498f187c2db24d35b4b4b5785c02c7dc52e356497b9a1b65b13edc996de08de0b961c32844364da02986dc53
   languageName: node
   linkType: hard
 
@@ -1093,11 +1093,11 @@ __metadata:
   linkType: hard
 
 "@types/babel__traverse@npm:*, @types/babel__traverse@npm:^7.0.4, @types/babel__traverse@npm:^7.0.6":
-  version: 7.14.1
-  resolution: "@types/babel__traverse@npm:7.14.1"
+  version: 7.14.2
+  resolution: "@types/babel__traverse@npm:7.14.2"
   dependencies:
     "@babel/types": ^7.3.0
-  checksum: a649b7d771233144d9dbbc2078b8f94a7cf000ffae6390b8cd5a99806802dc5b12e83b0ad3d998751262a6b658b6a25c593e7dcdbcdda658a2702121acaed117
+  checksum: a797ea09c72307569e3ee08aa3900ca744ce3091114084f2dc59b67a45ee7d01df7865252790dbfa787a7915ce892cdc820c9b920f3683292765fc656b08dc63
   languageName: node
   linkType: hard
 
@@ -1237,9 +1237,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 16.0.1
-  resolution: "@types/node@npm:16.0.1"
-  checksum: f25d861d1bc36cbcce34516f800472d3e7b5980ce4d72399b094bd5cd3636e20cd8e143f5b4615c9385c04ef5ddbf61a181612ab658ef95a6f641dbce911bf92
+  version: 16.0.3
+  resolution: "@types/node@npm:16.0.3"
+  checksum: b91ee69dbcf2c4b8a3c421439c5045a9903236506dae056d098587eec18770b867692018bb21ed8c911105c575670d88b8797f0a7fbca53e0899e2f3ad28d826
   languageName: node
   linkType: hard
 
@@ -2448,13 +2448,13 @@ __metadata:
   linkType: hard
 
 "clipanion@npm:^3.0.0-rc.10":
-  version: 3.0.0-rc.12
-  resolution: "clipanion@npm:3.0.0-rc.12"
+  version: 3.0.0
+  resolution: "clipanion@npm:3.0.0"
   dependencies:
     typanion: ^3.3.1
   peerDependencies:
     typanion: "*"
-  checksum: a3824cbd11df862b52b72bf69fe63b6fecc5f63c3cc48fc54af2ef6145eac78e021246bd5b0f5c10c4af0ddfc0503b169283142cd2f643f528109cc24548773f
+  checksum: a33f6305d06f66379de47043e10034ee4f872decb4229365d2b92fa9f3b6f79336057aa0a58207d802ba390650bddd2360d4079f6407b3fe8fda923390b79114
   languageName: node
   linkType: hard
 
@@ -3108,9 +3108,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.723":
-  version: 1.3.769
-  resolution: "electron-to-chromium@npm:1.3.769"
-  checksum: 484767fa6ab1c9a0a2ed39037027ab9f712439d51f4cfb7b314e708e2b3ec9e93b47c83af4f84fe7ce1e24f9e961dbe923ebd65b6ab7638c59865405383421ff
+  version: 1.3.771
+  resolution: "electron-to-chromium@npm:1.3.771"
+  checksum: 7f49245e5d1a61f1b78069c5af7ac970498ea78afeaee9ba7cc264eb2350f3b647de86ca8a55339b10b15a34c166c03396291661faa2bf8e50461ddbe397d8b3
   languageName: node
   linkType: hard
 
@@ -3559,15 +3559,15 @@ __metadata:
   linkType: hard
 
 "fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.2":
-  version: 3.2.6
-  resolution: "fast-glob@npm:3.2.6"
+  version: 3.2.7
+  resolution: "fast-glob@npm:3.2.7"
   dependencies:
     "@nodelib/fs.stat": ^2.0.2
     "@nodelib/fs.walk": ^1.2.3
     glob-parent: ^5.1.2
     merge2: ^1.3.0
     micromatch: ^4.0.4
-  checksum: 5cd4fb7b3d8c176cf11bca068f88a45b4e231c6f508e43cc9ad69c5551558420ee90df1a1b6c5a9e047b4ee8fa5f5ac7f7aaf27b7a54d8597971d4705e4390a2
+  checksum: 2f4708ff112d2b451888129fdd9a0938db88b105b0ddfd043c064e3c4d3e20eed8d7c7615f7565fee660db34ddcf08a2db1bf0ab3c00b87608e4719694642d78
   languageName: node
   linkType: hard
 
@@ -3653,9 +3653,9 @@ __metadata:
   linkType: hard
 
 "flatted@npm:^3.1.0":
-  version: 3.2.0
-  resolution: "flatted@npm:3.2.0"
-  checksum: 31ceaf91e9f79acb4855789d243a583100d2d116eb6ea20e51ba1bf6c4675d865e65a44b4e03451764388d6fc6e2a92822873a5c7afa623d9dc46077b9bd78d5
+  version: 3.2.1
+  resolution: "flatted@npm:3.2.1"
+  checksum: 569f3af4ba493d6446dafb45f3c709d0a0e8e0baf7d172ca80896ed985c40fde29290a0425f07d4bb6807752237aabb29bc6529c96edc30175bf8227906a7055
   languageName: node
   linkType: hard
 
@@ -7823,9 +7823,9 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "typanion@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "typanion@npm:3.3.1"
-  checksum: 212d2beb5502028f7879c90508cd7695d83a32b95d9323870d2a2c8b21f68e4cdf2bafbfdd6a2c8f3a37329355e3d5ec6e99c97eecd422adcd8e07011ee7668b
+  version: 3.3.2
+  resolution: "typanion@npm:3.3.2"
+  checksum: e7621409eb56cac3145ba3955702682627d4018a8f31b1c8355d354a93b86f7cea339583b211a4dbf7576847dd04aacad4af6912f3c42542e573b9c325e6093c
   languageName: node
   linkType: hard
 
