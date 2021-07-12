@@ -24,9 +24,11 @@ export default function AnalyticsDiscord() {
         <Typography variant="h5" >
           From
         </Typography>
+        {/* // Date picker suppose to be here */}
         <Typography variant="h5" >
             To
         </Typography>
+        {/* // Date picker suppose to be here */}
       </Grid>
       <h1>Key Metrics</h1>
       <Grid
