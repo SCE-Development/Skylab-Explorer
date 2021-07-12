@@ -4,6 +4,7 @@ import DropdownFrequency from "../../Components/DropdownFrequency";
 import CustomDatePicker from "../../Components/CustomDatePicker";
 import { Grid } from "@material-ui/core";
 import { useState } from "react";
+import DiscordAppBar from "../../Components/DiscordAppBar";
 
 export default function AnalyticsDiscord() {
   const [data, setData] = useState([
@@ -15,6 +16,7 @@ export default function AnalyticsDiscord() {
   ]);
   return (
     <div>
+      <DiscordAppBar />
       <h1>SCE Analytics</h1>
       <DropdownFrequency />
       {/* <CustomDatePicker /> */}
