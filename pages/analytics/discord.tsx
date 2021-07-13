@@ -6,6 +6,7 @@ import { useState } from 'react';
 =======
 import CustomKeyMetric from "../../Components/CustomKeyMetric";
 import CustomLineChart from "../../Components/CustomLineChart";
+import DropdownFrequency from "../../Components/DropdownFrequency";
 import { Grid } from "@material-ui/core";
 import { useState } from "react";
 import DiscordAppBar from "../../Components/DiscordAppBar";
@@ -23,6 +24,7 @@ export default function AnalyticsDiscord() {
     <div>
       <DiscordAppBar />
       <h1>SCE Analytics</h1>
+      <DropdownFrequency />
       <h1>Key Metrics</h1>
       <Grid container direction="row" justify="flex-start" alignItems="flex-start" spacing={1}>
         <CustomKeyMetric title="Commands Made" number={34} isUp={true} />

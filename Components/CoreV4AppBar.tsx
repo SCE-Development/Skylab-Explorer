@@ -21,7 +21,7 @@ const CoreV4Typography = withStyles({
 
 const BlackAppBar = withStyles({
   root: {
-    background: "#000000"
+    background: "#2b2929"
   }
 })(AppBar);
 
