@@ -3,6 +3,7 @@ import { FC, useEffect } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { AppProps } from 'next/app';
+import { Provider } from 'next-auth/client';
 import Head from 'next/head';
 import theme from '../styles/theme';
 
@@ -22,10 +23,12 @@ useEffect(() => {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"/>
       </Head>
+      <Provider session = { pageProps.session} >
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
+      </Provider>
     </>
   );
 };
