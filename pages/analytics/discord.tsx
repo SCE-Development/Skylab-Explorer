@@ -1,3 +1,4 @@
+
 import CustomKeyMetric from "../../Components/CustomKeyMetric";
 import CustomLineChart from "../../Components/CustomLineChart";
 import DropdownFrequency from "../../Components/DropdownFrequency";
@@ -19,39 +20,22 @@ export default function AnalyticsDiscord() {
       <h1>SCE Analytics</h1>
       <DropdownFrequency />
       <h1>Key Metrics</h1>
-      <Grid
-      container
-      direction="row"
-      justify="flex-start"
-      alignItems="flex-start"
-      spacing = {1}
-      >
-        <CustomKeyMetric
-          title = "Commands Made"
-          number = {34}
-          isUp = { true }
-        />
-        <CustomKeyMetric
-          title = "Successful Commands"
-          number = {45}
-          isUp = { false }
-        />
-        <CustomKeyMetric
-          title = "Failed Commands"
-          isUp = { false }
-        />
+      <Grid container direction="row" justify="flex-start" alignItems="flex-start" spacing={1}>
+        <CustomKeyMetric title="Commands Made" number={34} isUp={true} />
+        <CustomKeyMetric title="Successful Commands" number={45} isUp={false} />
+        <CustomKeyMetric title="Failed Commands" isUp={false} />
       </Grid>
       <h1>Graphs</h1>
       <CustomLineChart
-          title = {'Visits'}
-          total = "3000"
-          data = {data}
-          dataKey = "quantity"
-          isYAxis = {false}
-          width = {400}
-          height = {500}
-          xLabel = "date"
-        />
+        title={'Visits'}
+        total="3000"
+        data={data}
+        dataKey="quantity"
+        isYAxis={false}
+        width={400}
+        height={500}
+        xLabel="date"
+      />
     </div>
   );
 }
