@@ -4,20 +4,13 @@
 import { GetServerSideProps } from "next";
 import { DiscordUser } from "../utils/types";
 import { parseUser } from "../utils/parse-user";
-import { useEffect } from "react";
 
 interface Props {
   user: DiscordUser;
 }
 
-export default function Index(props: Props) {
+export default function Index(props : Props) {
   const { user } = props;
-
-  useEffect(() => {
-    console.log("test");
-    console.log(user);
-    console.log(props);
-    }, [props, user]);
 
   return (
     <h1>

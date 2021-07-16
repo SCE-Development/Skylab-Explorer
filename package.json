@@ -34,6 +34,7 @@
     "@types/eslint": "^7",
     "@types/events": "^3",
     "@types/jest": "^26.0.23",
+    "@types/js-cookie": "^2.2.7",
     "@types/jsonwebtoken": "^8",
     "@types/node": "^15.0.2",
     "@types/node-fetch": "^2",

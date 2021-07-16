@@ -10,8 +10,11 @@ const scope = ["identify"].join(" ");
 const REDIRECT_URI = `${config.appUri}/api/oauth`;
 
 /*
-  Apparently this get the access token
-  Then get discord user profile
+  This function first request access_token
+  Then using that access_token to get DiscordUser profile
+  If it got DiscordUser, redirect to "/"
+  We need to figure out how does it pass DiscordUser profile to "/" as props
+  So that we can pass access_token as well
 */
 const OAUTH_QS = new URLSearchParams({
   client_id: config.clientId,

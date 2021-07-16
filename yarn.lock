@@ -1250,6 +1250,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/js-cookie@npm:^2.2.7":
+  version: 2.2.7
+  resolution: "@types/js-cookie@npm:2.2.7"
+  checksum: 8a45b2a60f535853db1c86ab71e200b190c97a62d7fb63fca3a71b3785c1a67fc360ada1c9061273cacf878ccc8b69b6db1754efb76237f18200dcbddaee608a
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.3":
   version: 7.0.7
   resolution: "@types/json-schema@npm:7.0.7"
@@ -5458,6 +5465,7 @@ __metadata:
     "@types/eslint": ^7
     "@types/events": ^3
     "@types/jest": ^26.0.23
+    "@types/js-cookie": ^2.2.7
     "@types/jsonwebtoken": ^8
     "@types/node": ^15.0.2
     "@types/node-fetch": ^2
