@@ -9,6 +9,10 @@ import { NextApiRequest, NextApiResponse } from "next";
 const scope = ["identify"].join(" ");
 const REDIRECT_URI = `${config.appUri}/api/oauth`;
 
+/*
+  Apparently this get the access token
+  Then get discord user profile
+*/
 const OAUTH_QS = new URLSearchParams({
   client_id: config.clientId,
   redirect_uri: REDIRECT_URI,

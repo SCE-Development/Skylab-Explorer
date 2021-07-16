@@ -2,7 +2,7 @@
 /* eslint-disable require-await */
 /* eslint-disable func-style */
 import { GetServerSideProps } from "next";
-import { DiscordUser } from "../utils/types";
+import { DiscordUser } from "../types/auth";
 import { parseUser } from "../utils/parse-user";
 import { useEffect } from "react";
 
@@ -12,12 +12,6 @@ interface Props {
 
 export default function Index(props: Props) {
   const { user } = props;
-
-  useEffect(() => {
-    console.log("test");
-    console.log(user);
-    console.log(props);
-    }, [props, user]);
 
   return (
     <h1>

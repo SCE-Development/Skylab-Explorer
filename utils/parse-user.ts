@@ -1,5 +1,5 @@
 import { GetServerSidePropsContext } from "next";
-import { DiscordUser } from "./types";
+import { DiscordUser } from "../types/auth";
 import { parse } from "cookie";
 import { verify } from "jsonwebtoken";
 import { config } from "./config";
