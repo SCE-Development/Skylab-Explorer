@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "docker:build": "docker build -t explorer .",
+    "docker:run": "docker run -p 8080:3000 --name explorer -d explorer",
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
     "start": "next start",
     "postinstall": "husky install",
