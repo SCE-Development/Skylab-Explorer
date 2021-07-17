@@ -2,7 +2,7 @@
 /* eslint-disable require-await */
 /* eslint-disable func-style */
 import { GetServerSideProps } from "next";
-import { DiscordUser } from "../utils/types";
+import { DiscordUser } from "../types/auth";
 import { parseUser } from "../utils/parse-user";
 
 interface Props {
