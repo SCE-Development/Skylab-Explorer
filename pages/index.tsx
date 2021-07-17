@@ -14,7 +14,7 @@ export default function Index(props : Props) {
 
   return (
     <h1>
-      Hey, {user.username}#{user.discriminator}
+      Hey, {user.username}#{user.discriminator} token is {user.token}
     </h1>
   );
 }
