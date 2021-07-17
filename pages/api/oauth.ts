@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import { serialize } from "cookie";
 import { config } from "../../utils/config";
 import { sign } from "jsonwebtoken";
-import { DiscordUser } from "../../utils/types";
+import { DiscordUser } from "../../types/auth";
 import { NextApiRequest, NextApiResponse } from "next";
 
 const scope = ["identify"].join(" ");
