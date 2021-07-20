@@ -13,8 +13,8 @@ const REDIRECT_URI = `${config.appUri}/api/oauth`;
   This function first request access_token
   Then using that access_token to get DiscordUser profile
   If it got DiscordUser, redirect to "/"
-  We need to figure out how does it pass DiscordUser profile to "/" as props
-  So that we can pass access_token as well
+  We pass the token as a part of DiscordUser profile to "/" as props
+  So that we can pass access_token as well in /utils/parse-user file
 */
 const OAUTH_QS = new URLSearchParams({
   client_id: config.clientId,
@@ -71,9 +71,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       httpOnly: true,
       secure: process.env.NODE_ENV !== "development",
       sameSite: "lax",
-      path: "/",
+      path: "/landing",
     })
   );
 
-  res.redirect("/");
+  res.redirect("/landing");
 };

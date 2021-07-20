@@ -17,6 +17,7 @@ export function parseUser(ctx: GetServerSidePropsContext): DiscordUser | null {
 
   try {
     const { iat, exp, ...user } = verify(token, config.jwtSecret) as DiscordUser & { iat: number; exp: number };
+    // assign token as user.token and send it as prop
     user.token = token;
     return user;
   } catch (e) {

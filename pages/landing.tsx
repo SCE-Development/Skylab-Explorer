@@ -1,13 +1,35 @@
-import { Button, Grid, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+/* eslint-disable func-names */
+/* eslint-disable require-await */
+/* eslint-disable func-style */
+import { GetServerSideProps } from "next";
+import { DiscordUser } from "../types/auth";
+import { parseUser } from "../utils/parse-user";
 
-export default function Landing() {
+interface Props {
+  user: DiscordUser;
+}
+
+export default function Index(props : Props) {
+  const { user } = props;
+
   return (
-    <Grid container direction="column" justify="center" alignItems="center">
-      <Typography variant="h1">SCE Analytics</Typography>
-      <Button style={{ maxWidth: '150px', maxHeight: '75px', minWidth: '150px', minHeight: '75px' }}>
-        <h1>Login</h1>
-      </Button>
-    </Grid>
+    <h1>
+      Hey, {user.username}#{user.discriminator} token is {user.token}
+    </h1>
   );
 }
+
+export const getServerSideProps: GetServerSideProps<Props> = async function(ctx) {
+  const user = parseUser(ctx);
+
+  if (!user) {
+    return {
+      redirect: {
+        destination: "/api/oauth",
+        permanent: false,
+      },
+    };
+  }
+
+  return { props: { user } };
+};
