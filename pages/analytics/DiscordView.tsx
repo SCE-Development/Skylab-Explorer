@@ -11,9 +11,7 @@ const PurpleTypography = withStyles({
     color: "#A5B7F6"
   }
 })(Typography);
-
 export default function DiscordPage() {
-
 const [data, setData] = useState([
   { date: '11/28', quantity: 10 },
   { date: '11/29', quantity: 9 },
@@ -21,9 +19,7 @@ const [data, setData] = useState([
   { date: '12/1', quantity: 4 },
   { date: '12/2', quantity: 15 },
 ]);
-
 const darkMode = useDarkMode();
-
 return (
       <div>
       <div style={{ minHeight: "150px", width: '100%' }}>
