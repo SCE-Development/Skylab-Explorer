@@ -46,7 +46,7 @@ return (
       < br/>
       < br/>
       < br/>
-      <Grid container direction="row" justify="flex-start" alignItems="center" spacing={10}>
+      <Grid container direction="row" justifyContent="flex-start" alignItems="center" spacing={10}>
         <Grid item>
           <CustomKeyMetric title="Commands Made" number={34} isUp={true} />
         </Grid>

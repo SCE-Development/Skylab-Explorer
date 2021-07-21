@@ -49,6 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.28.3"],
             ["@typescript-eslint/parser", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.28.3"],
             ["@yarnpkg/pnpify", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:3.0.0-rc.10"],
+            ["axios", "npm:0.21.1"],
             ["eslint", "npm:7.30.0"],
             ["husky", "npm:6.0.0"],
             ["jest", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:27.0.6"],
@@ -2729,6 +2730,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["axios", [
         ["npm:0.21.1", {
           "packageLocation": "./.yarn/cache/axios-npm-0.21.1-d192f6b3b3-c87915fa0b.zip/node_modules/axios/",
           "packageDependencies": [
@@ -4815,9 +4817,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-        ["npm:1.14.1", {
           "packageLocation": "./.yarn/cache/follow-redirects-npm-1.14.1-e6bdc0f8e5-7381a55bdc.zip/node_modules/follow-redirects/",
-          "packageDependencies": [
             ["follow-redirects", "npm:1.14.1"]
           ],
           "linkType": "SOFT",
