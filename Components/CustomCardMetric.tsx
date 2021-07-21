@@ -1,4 +1,5 @@
-import { Typography, Card, CardContent, Grid, makeStyles } from '@material-ui/core';
+import { Typography, Card, CardContent, Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
