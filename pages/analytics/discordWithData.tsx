@@ -11,20 +11,17 @@ export const getStaticProps = async () => {
 
   const baseUrl = 'http://localhost:8000';
 
-  const dateParams = {
+  const commandDataParams = {
+    "command": ["s!mute", "s!help"],
     "startDate": "2015-01-01",
     "endDate": "2025-01-01"
   };
 
-  const loginData = await fetchData(baseUrl + '/loginTraffic', dateParams);
-  const printingData = await fetchData(baseUrl + '/printingAnalytics', dateParams);
-  const pageData = await fetchData(baseUrl + '/pageVisits', dateParams);
+  const commandData = await fetchData(baseUrl + '/commandCallCount', commandDataParams);
 
   return {
     props: {
-      fetchedLoginData: loginData,
-      fetchedPrintingData: printingData,
-      fetchedPageData: pageData
+      fetchedCommandData: commandData
     },
   };
 };
@@ -51,20 +48,18 @@ async function fetchData(requestUrl, dataBody) {
   }
 }
 
-const OrangeTypography = withStyles({
+const PurpleTypography = withStyles({
   root: {
-    color: "#F6A5A5"
+    color: "#A5B7F6"
   }
 })(Typography);
 
-export default function CoreV4Page({ fetchedLoginData, fetchedPrintingData, fetchedPageData }) {
-const [loginData, setLoginData] = useState(fetchedLoginData);
-const [printingData, setPrintingData] = useState(fetchedPrintingData);
-const [pageData, setPageData] = useState(fetchedPageData);
+export default function CoreV4Page({ fetchedCommandData }) {
+const [commandData, setCommandData] = useState(fetchedCommandData);
 
-console.log("Printing analytics: logging first date:", printingData.["Printing Analytics"][0]["EventDate"]);
-console.log("Logging users printed:", printingData.["Printing Analytics"][0]["UsersPrinted"]);
-console.log("Logging pages printed:", printingData.["Printing Analytics"][0]["PagesPrinted"]);
+console.log("Printing commands:");
+console.log("s!mute:", fetchedCommandData['s!mute']);
+console.log("s!help:", fetchedCommandData['s!help']);
 
 const darkMode = useDarkMode();
 return (
@@ -73,7 +68,7 @@ return (
         <Box display="flex">
           <Box flexGrow={1}>
             <Typography variant="h1" display="inline">SCE Analytics</Typography>
-            <OrangeTypography variant="h2" display="inline">&nbsp;Core-V4</OrangeTypography>
+            <PurpleTypography variant="h2" display="inline">&nbsp;Discord</PurpleTypography>
           </Box>
           <Box pt={7}>
           <Button onClick={darkMode.toggle}>Scheme</Button>
@@ -83,7 +78,7 @@ return (
           </Box>
         </Box>
         < br/>
-        < Divider style={{ background: "#F6A5A5" }}/>
+        < Divider style={{ background: "#A5B7F6" }}/>
       </div>
       <DropdownFrequency />
       < br/>
