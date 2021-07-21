@@ -1,43 +1,38 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#FFFFFF',
-      contrastText: '#010101',
-    },
-    secondary: {
-      main: '#303341',
-      contrastText: '#E5E5E5',
-    },
-    background: {
-       default: '#2b2929',
-    },
-  },
+const defaultTheme = createMuiTheme({
   typography: {
     fontFamily: 'Quicksand',
     allVariants: {
-     color: '#CDCDCD',
       fontWeight: 'bold',
     },
   },
-  shape: {
-    borderRadius: 100,
-  },
-  overrides: {
-    MuiButton: {
-      root: {
-        textTransform: "none",
-        paddingLeft: 20,
-        paddingRight: 20,
-      }
-    },
-  },
   props: {
-    MuiButton: {
-      variant: "contained",
+      MuiButton: {
+        variant: "contained",
+      }
     }
-  }
 });
 
-export default theme;
+export const lightTheme = createMuiTheme ({
+  ...defaultTheme,
+  palette: {
+    type: "light",
+    background: {
+      paper: "#C1C1C1",
+      default: 'f7f7f7'
+    }
+  },
+});
+
+export const darkTheme = createMuiTheme({
+  ...defaultTheme,
+  palette: {
+    type: "dark",
+    background: {
+      paper: "#303341",
+      default: '#13151D'
+    }
+  },
+});
+
