@@ -11,7 +11,9 @@ const PurpleTypography = withStyles({
     color: "#A5B7F6"
   }
 })(Typography);
+
 export default function DiscordPage() {
+
 const [data, setData] = useState([
   { date: '11/28', quantity: 10 },
   { date: '11/29', quantity: 9 },
@@ -19,7 +21,9 @@ const [data, setData] = useState([
   { date: '12/1', quantity: 4 },
   { date: '12/2', quantity: 15 },
 ]);
+
 const darkMode = useDarkMode();
+
 return (
       <div>
       <div style={{ minHeight: "150px", width: '100%' }}>
@@ -46,7 +50,7 @@ return (
       < br/>
       < br/>
       < br/>
-      <Grid container direction="row" justifyContent="flex-start" alignItems="center" spacing={10}>
+      <Grid container direction="row" justify="flex-start" alignItems="center" spacing={10}>
         <Grid item>
           <CustomKeyMetric title="Commands Made" number={34} isUp={true} />
         </Grid>

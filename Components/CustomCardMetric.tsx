@@ -1,12 +1,14 @@
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import { makeStyles } from '@material-ui/core/styles';
+import { Typography, Card, CardContent, CardHeader, Container, Grid, makeStyles } from "@material-ui/core";
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 const useStyles = makeStyles({
+    roundContainer: {
+        borderRadius: '20px',
+        backgroundColor: 'grey',
+        width: 'fit-content',
+        maxWidth: '15em',
+    },
     metricUp: {
         color: 'green',
         fontSize: '5em'
@@ -21,15 +23,15 @@ export default function CustomKeyMetric({ title = "Default title", number = 12, 
     const style = useStyles();
     return(
         <Card>
+        {/* // <Card style={{backgroundColor: "#a8a8a8"}}> */}
           <CardContent>
-              <Typography>
+              <Typography gutterBottom>
                 {title}
               </Typography>
-              < br/>
               <Grid
                  container
                  direction="row"
-                 justifyContent="center"
+                 justify="center"
                  alignItems="center"
              >
               <Typography variant ="h3">{number}</Typography>
@@ -39,9 +41,8 @@ export default function CustomKeyMetric({ title = "Default title", number = 12, 
                     : <ArrowDropDownIcon className = {style.metricDown} />
                  }
               </Grid>
-              < br/>
-              <Typography>
-              +30.0% (3) Better compared to last week
+              <Typography variant="p">
+              <h4>+30.0% (3) Better compared to last week</h4>
               </Typography>
             </CardContent>
         </Card>
