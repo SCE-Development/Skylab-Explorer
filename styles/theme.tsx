@@ -1,6 +1,6 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 
-const defaultTheme = createMuiTheme({
+const defaultTheme = createTheme({
   typography: {
     fontFamily: 'Quicksand',
     allVariants: {
@@ -14,7 +14,7 @@ const defaultTheme = createMuiTheme({
     }
 });
 
-export const lightTheme = createMuiTheme ({
+export const lightTheme = createTheme ({
   ...defaultTheme,
   palette: {
     type: "light",
@@ -25,7 +25,7 @@ export const lightTheme = createMuiTheme ({
   },
 });
 
-export const darkTheme = createMuiTheme({
+export const darkTheme = createTheme({
   ...defaultTheme,
   palette: {
     type: "dark",

@@ -4,21 +4,68 @@ import { ThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/sty
 import CustomKeyMetric from "../../Components/CustomCardMetric";
 import CustomLineChart from "../../Components/CustomLineChart";
 import DropdownFrequency from "../../Components/DropdownFrequency";
+import axios, { AxiosRequestConfig } from "axios";
 import useDarkMode from 'use-dark-mode';
+
+export const getStaticProps = async () => {
+
+  const baseUrl = 'http://localhost:8000';
+
+  const dateParams = {
+    "startDate": "2015-01-01",
+    "endDate": "2025-01-01"
+  };
+
+  const loginData = await fetchData(baseUrl + '/loginTraffic', dateParams);
+  const printingData = await fetchData(baseUrl + '/printingAnalytics', dateParams);
+  const pageData = await fetchData(baseUrl + '/pageVisits', dateParams);
+
+  return {
+    props: {
+      fetchedLoginData: loginData,
+      fetchedPrintingData: printingData,
+      fetchedPageData: pageData
+    },
+  };
+};
+
+async function fetchData(requestUrl, dataBody) {
+  try {
+    const data = await axios
+    .get(requestUrl, {
+      data: dataBody
+    })
+    .then(response => {
+      return response.data;
+    })
+    return data;
+  } catch (error) {
+    if (error.response) {
+      console.log("API call failed: client response error: Code", error.response.status);
+    } else if (error.request) {
+      console.log("API call failed: client request error");
+    } else {
+      console.log("API call failed: unspecified error");
+    }
+    return {};
+  }
+}
 
 const OrangeTypography = withStyles({
   root: {
     color: "#F6A5A5"
   }
 })(Typography);
-export default function CoreV4Page() {
-const [data, setData] = useState([
-  { date: '11/28', quantity: 10 },
-  { date: '11/29', quantity: 9 },
-  { date: '11/30', quantity: 6 },
-  { date: '12/1', quantity: 4 },
-  { date: '12/2', quantity: 15 },
-]);
+
+export default function CoreV4Page( {fetchedLoginData, fetchedPrintingData, fetchedPageData} ) {
+const [loginData, setLoginData] = useState(fetchedLoginData);
+const [printingData, setPrintingData] = useState(fetchedPrintingData);
+const [pageData, setPageData] = useState(fetchedPageData);
+
+console.log("Printing analytics: logging first date:", printingData.["Printing Analytics"][0]["EventDate"]);
+console.log("Logging users printed:", printingData.["Printing Analytics"][0]["UsersPrinted"]);
+console.log("Logging pages printed:", printingData.["Printing Analytics"][0]["PagesPrinted"]);
+
 const darkMode = useDarkMode();
 return (
       <div>
@@ -61,16 +108,6 @@ return (
       < br/>
       < br/>
       <Typography variant="h4">Graphs</Typography>
-      <CustomLineChart
-        title={'Visits'}
-        total="3000"
-        data={data}
-        dataKey="quantity"
-        isYAxis={false}
-        width={400}
-        height={500}
-        xLabel="date"
-      />
       </div>
   );
 }

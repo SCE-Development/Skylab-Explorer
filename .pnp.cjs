@@ -49,6 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.28.3"],
             ["@typescript-eslint/parser", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.28.3"],
             ["@yarnpkg/pnpify", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:3.0.0-rc.10"],
+            ["axios", "npm:0.21.1"],
             ["eslint", "npm:7.30.0"],
             ["eslint-plugin-react", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:7.24.0"],
             ["eslint-plugin-react-hooks", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.2.0"],
@@ -2731,6 +2732,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["axios", [
+        ["npm:0.21.1", {
+          "packageLocation": "./.yarn/cache/axios-npm-0.21.1-d192f6b3b3-c87915fa0b.zip/node_modules/axios/",
+          "packageDependencies": [
+            ["axios", "npm:0.21.1"],
+            ["follow-redirects", "virtual:d192f6b3b31cd5d11a443145a3883a70c04cbd7c813c53085dbaf50263735f1162f10fdbddd53c24e162ec3bc37b90966413084323739b7cf942b8bfb4da8831#npm:1.14.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["babel-jest", [
         ["npm:27.0.6", {
           "packageLocation": "./.yarn/cache/babel-jest-npm-27.0.6-bcf561f621-1e79dd1d9e.zip/node_modules/babel-jest/",
@@ -4810,6 +4821,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["follow-redirects", [
+        ["npm:1.14.1", {
+          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.14.1-e6bdc0f8e5-7381a55bdc.zip/node_modules/follow-redirects/",
+          "packageDependencies": [
+            ["follow-redirects", "npm:1.14.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:d192f6b3b31cd5d11a443145a3883a70c04cbd7c813c53085dbaf50263735f1162f10fdbddd53c24e162ec3bc37b90966413084323739b7cf942b8bfb4da8831#npm:1.14.1", {
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-0c4ea90a75/0/cache/follow-redirects-npm-1.14.1-e6bdc0f8e5-7381a55bdc.zip/node_modules/follow-redirects/",
+          "packageDependencies": [
+            ["follow-redirects", "virtual:d192f6b3b31cd5d11a443145a3883a70c04cbd7c813c53085dbaf50263735f1162f10fdbddd53c24e162ec3bc37b90966413084323739b7cf942b8bfb4da8831#npm:1.14.1"],
+            ["debug", null]
+          ],
+          "packagePeers": [
+            "debug"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["foreach", [
         ["npm:2.0.5", {
           "packageLocation": "./.yarn/cache/foreach-npm-2.0.5-9fbfc73114-dab4fbfef0.zip/node_modules/foreach/",
@@ -6674,6 +6705,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.28.3"],
             ["@typescript-eslint/parser", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.28.3"],
             ["@yarnpkg/pnpify", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:3.0.0-rc.10"],
+            ["axios", "npm:0.21.1"],
             ["eslint", "npm:7.30.0"],
             ["eslint-plugin-react", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:7.24.0"],
             ["eslint-plugin-react-hooks", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.2.0"],

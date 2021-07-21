@@ -27,15 +27,15 @@ export default function CustomKeyMetric({ title = "Default title", number = 12, 
     const style = useStyles();
     return(
         <Card>
-        {/* // <Card style={{backgroundColor: "#a8a8a8"}}> */}
           <CardContent>
-              <Typography gutterBottom>
+              <Typography>
                 {title}
               </Typography>
+              < br/>
               <Grid
                  container
                  direction="row"
-                 justify="center"
+                 justifyContent="center"
                  alignItems="center"
              >
               <Typography variant ="h3">{number}</Typography>
@@ -45,8 +45,9 @@ export default function CustomKeyMetric({ title = "Default title", number = 12, 
                     : <ArrowDropDownIcon className = {style.metricDown} />
                  }
               </Grid>
-              <Typography variant="p">
-              <h4>+30.0% (3) Better compared to last week</h4>
+              < br/>
+              <Typography>
+              +30.0% (3) Better compared to last week
               </Typography>
             </CardContent>
         </Card>
