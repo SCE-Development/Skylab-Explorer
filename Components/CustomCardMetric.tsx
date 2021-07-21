@@ -1,4 +1,4 @@
-import { Typography, Card, CardContent, Grid } from '@material-ui/core';
+import { Typography, Card, CardContent, Grid, makeStyles } from '@material-ui/core';
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
@@ -23,6 +23,7 @@ export default function CustomKeyMetric({ title = "Default title", number = 12, 
     const style = useStyles();
     return(
         <Card>
+        {/* // <Card style={{backgroundColor: "#a8a8a8"}}> */}
           <CardContent>
               <Typography gutterBottom>
                 {title}
