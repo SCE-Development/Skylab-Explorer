@@ -57,7 +57,7 @@ const OrangeTypography = withStyles({
   }
 })(Typography);
 
-export default function CoreV4Page( {fetchedLoginData, fetchedPrintingData, fetchedPageData} ) {
+export default function CoreV4Page({ fetchedLoginData, fetchedPrintingData, fetchedPageData }) {
 const [loginData, setLoginData] = useState(fetchedLoginData);
 const [printingData, setPrintingData] = useState(fetchedPrintingData);
 const [pageData, setPageData] = useState(fetchedPageData);
