@@ -1940,6 +1940,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "axios@npm:^0.21.1":
   version: 0.21.1
   resolution: "axios@npm:0.21.1"
@@ -1949,6 +1950,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> adc6cfe (added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page)
 "babel-jest@npm:^27.0.6":
   version: 27.0.6
   resolution: "babel-jest@npm:27.0.6"
@@ -3677,6 +3680,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "follow-redirects@npm:^1.10.0":
   version: 1.14.1
   resolution: "follow-redirects@npm:1.14.1"
@@ -3687,6 +3691,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> adc6cfe (added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page)
 "foreach@npm:^2.0.5":
   version: 2.0.5
   resolution: "foreach@npm:2.0.5"
@@ -5350,7 +5356,10 @@ __metadata:
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
     "@yarnpkg/pnpify": ^3.0.0-rc.3
+<<<<<<< HEAD
     axios: ^0.21.1
+=======
+>>>>>>> adc6cfe (added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page)
     eslint: ^7.26.0
     eslint-plugin-react: latest
     eslint-plugin-react-hooks: latest
