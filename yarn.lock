@@ -2084,6 +2084,7 @@ __metadata:
   linkType: hard
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "axe-core@npm:^4.0.2":
   version: 4.3.2
   resolution: "axe-core@npm:4.3.2"
@@ -2093,6 +2094,8 @@ __metadata:
 
 =======
 <<<<<<< HEAD
+>>>>>>> added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page
+=======
 >>>>>>> added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page
 "axios@npm:^0.21.1":
   version: 0.21.1
@@ -2104,6 +2107,7 @@ __metadata:
   linkType: hard
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "axobject-query@npm:^2.2.0":
   version: 2.2.0
   resolution: "axobject-query@npm:2.2.0"
@@ -2114,6 +2118,8 @@ __metadata:
 =======
 =======
 >>>>>>> adc6cfe (added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page)
+>>>>>>> added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page
+=======
 >>>>>>> added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page
 "babel-jest@npm:^27.0.6":
   version: 27.0.6
@@ -4013,7 +4019,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
 "follow-redirects@npm:^1.10.0":
   version: 1.14.1
   resolution: "follow-redirects@npm:1.14.1"
@@ -4024,8 +4029,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-=======
->>>>>>> adc6cfe (added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page)
 "foreach@npm:^2.0.5":
   version: 2.0.5
   resolution: "foreach@npm:2.0.5"
@@ -5754,13 +5757,15 @@ __metadata:
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
     "@yarnpkg/pnpify": ^3.0.0-rc.3
-<<<<<<< HEAD
     axios: ^0.21.1
+<<<<<<< HEAD
 <<<<<<< HEAD
     cookie: ^0.4.1
 =======
 =======
 >>>>>>> adc6cfe (added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page)
+>>>>>>> added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page
+=======
 >>>>>>> added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page
     eslint: ^7.26.0
     eslint-config-next: ^11.0.1

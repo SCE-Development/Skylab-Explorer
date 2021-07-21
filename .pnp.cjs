@@ -49,13 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.28.3"],
             ["@typescript-eslint/parser", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.28.3"],
             ["@yarnpkg/pnpify", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:3.0.0-rc.10"],
-<<<<<<< HEAD
-            ["axios", "npm:0.21.1"],
-=======
->>>>>>> adc6cfe (added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page)
             ["eslint", "npm:7.30.0"],
-            ["eslint-plugin-react", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:7.24.0"],
-            ["eslint-plugin-react-hooks", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:4.2.0"],
             ["husky", "npm:6.0.0"],
             ["jest", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:27.0.6"],
             ["next", "virtual:73eac2a4112f9cab3b70d5b44bdd57bb45092bf8ef9337b03a2574e212af8d83608d5f8cebbaaf590ae6c233903156565b3b58668d40bbe3f01560eb7b438097#npm:11.0.1"],
@@ -2735,8 +2729,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-<<<<<<< HEAD
-      ["axios", [
         ["npm:0.21.1", {
           "packageLocation": "./.yarn/cache/axios-npm-0.21.1-d192f6b3b3-c87915fa0b.zip/node_modules/axios/",
           "packageDependencies": [
@@ -2746,11 +2738,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-=======
->>>>>>> adc6cfe (added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page)
       ["babel-jest", [
-        ["npm:27.0.6", {
-          "packageLocation": "./.yarn/cache/babel-jest-npm-27.0.6-bcf561f621-1e79dd1d9e.zip/node_modules/babel-jest/",
           "packageDependencies": [
             ["babel-jest", "npm:27.0.6"]
           ],
@@ -21325,7 +21313,7 @@ module.exports = require("path");;
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -21338,14 +21326,14 @@ module.exports = require("path");;
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -21358,7 +21346,7 @@ module.exports = require("path");;
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -21370,12 +21358,12 @@ module.exports = require("path");;
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	// module exports must be returned from runtime so entry inlining is disabled
 /******/ 	// startup
