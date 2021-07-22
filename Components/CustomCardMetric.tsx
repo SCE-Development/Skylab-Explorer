@@ -7,12 +7,6 @@ import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 const useStyles = makeStyles({
-    roundContainer: {
-        borderRadius: '20px',
-        backgroundColor: 'grey',
-        width: 'fit-content',
-        maxWidth: '15em',
-    },
     metricUp: {
         color: 'green',
         fontSize: '5em'
