@@ -777,13 +777,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/core@npm:^4.11.4":
-  version: 4.11.4
-  resolution: "@material-ui/core@npm:4.11.4"
+"@material-ui/core@npm:^4.12.2":
+  version: 4.12.2
+  resolution: "@material-ui/core@npm:4.12.2"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@material-ui/styles": ^4.11.4
-    "@material-ui/system": ^4.11.3
+    "@material-ui/system": ^4.12.1
     "@material-ui/types": 5.1.0
     "@material-ui/utils": ^4.11.2
     "@types/react-transition-group": ^4.2.0
@@ -800,7 +800,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: fccfb867bc15875ab261552dcf4c626cfbd2fa93334666c880e32d509106e8804713e0421ad7af9095382eb06146e508ef75947d12d46a56cb8c9cabe7cf440e
+  checksum: daecbf812657112bfd82616ffe2add6686e80b2f0f38486108123c40cccbd0bcffb972c0d816a2b9f639f988758a86d769da6a71e6306d77b71265753786b54b
   languageName: node
   linkType: hard
 
@@ -852,9 +852,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/system@npm:^4.11.3":
-  version: 4.11.3
-  resolution: "@material-ui/system@npm:4.11.3"
+"@material-ui/system@npm:^4.12.1":
+  version: 4.12.1
+  resolution: "@material-ui/system@npm:4.12.1"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@material-ui/utils": ^4.11.2
@@ -867,7 +867,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 928f8fc1cd2b52d827d6cad1c5fc27fa6ce526b78560e3274892df085abccc15d28a9f42c439c93b90df14cc69a259843a106561e8096f06e7cea3bd1a4faeac
+  checksum: 2acf20b43090c381530899e2fa85b0a774fc4dfe08aa97a55c8fd58f833175fd1cb17374ecc403f722c2db3b3caffd1fadd5dffe146a08d036bc6031d676659b
   languageName: node
   linkType: hard
 
@@ -5457,7 +5457,7 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.14.6
     "@fontsource/roboto": ^4.4.5
-    "@material-ui/core": ^4.11.4
+    "@material-ui/core": ^4.12.2
     "@material-ui/icons": ^4.11.2
     "@material-ui/styles": ^4.11.4
     "@testing-library/react": ^12.0.0
