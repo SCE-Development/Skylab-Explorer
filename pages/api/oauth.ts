@@ -45,6 +45,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     scope,
   }).toString();
 
+  // get access token
   const { access_token = null, token_type = "Bearer" } = await fetch("https://discord.com/api/oauth2/token", {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     method: "POST",
@@ -55,6 +56,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     return res.redirect(OAUTH_URI);
   }
 
+  // then get discord user profile
   const me: DiscordUser | { unauthorized: true } = await fetch("http://discord.com/api/users/@me", {
     headers: { Authorization: `${token_type} ${access_token}` },
   }).then((res) => res.json());
@@ -63,6 +65,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     return res.redirect(OAUTH_URI);
   }
 
+  me.token = access_token;
+  // once it got the discord user, sign as json web token
   const token = sign(me, config.jwtSecret, { expiresIn: "24h" });
 
   res.setHeader(
@@ -71,9 +75,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       httpOnly: true,
       secure: process.env.NODE_ENV !== "development",
       sameSite: "lax",
-      path: "/landing",
+      path: "/dashboard",
     })
   );
 
-  res.redirect("/landing");
+  res.redirect("/dashboard");
 };

@@ -6,6 +6,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import { makeStyles } from '@material-ui/styles';
 import DatePickers from '../Components/DatePickers';
+import { parseUser } from "../utils/parse-user";
+
 const useStyles = makeStyles({
   whiteText: {
     color: 'white',
@@ -15,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Home() {
+export default function Home({user}) {
   const [visits, setVisits] = useState([
     { date: '11/28', quantity: 10 },
     { date: '11/29', quantity: 9 },
@@ -28,8 +30,12 @@ export default function Home() {
   const classes = useStyles();
 
   return (
-    // Building dashboard
     <Grid container direction="column" justify="center" alignItems="center" className={classes.whiteText}>
+      <Grid item>
+        <h1>
+          Hey, {user.username}#{user.discriminator} token is {user.token}
+        </h1>
+      </Grid>
       <Grid item container direction="row" justify="space-between" alignItems="center">
         <Grid item>
           <Typography variant="h3">Dashboard</Typography>
@@ -117,3 +123,18 @@ export default function Home() {
     </Grid>
   );
 }
+
+export const getServerSideProps: GetServerSideProps<Props> = async function(ctx) {
+  const user = parseUser(ctx);
+
+  if (!user) {
+    return {
+      redirect: {
+        destination: "/api/oauth",
+        permanent: false,
+      },
+    };
+  }
+
+  return { props: { user } };
+};
