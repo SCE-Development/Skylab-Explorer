@@ -62,7 +62,7 @@ export default function Home() {
       </Grid>
       <Grid item container direction="row" justify="flex-start" alignItems="center">
         {DashboardData.map((dashboard, key) => (
-          <Grid item key="key">
+          <Grid item key="dashboard">
             <DashboardCard {...dashboard} />
           </Grid>
         ))}
