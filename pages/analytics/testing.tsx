@@ -6,66 +6,42 @@ import CustomLineChart from "../../Components/CustomLineChart";
 import DropdownFrequency from "../../Components/DropdownFrequency";
 import axios, { AxiosRequestConfig } from "axios";
 import useDarkMode from 'use-dark-mode';
+import pageVisitsQuery from "../../lib/api/dataQuery";
 
-async function fetchData(requestUrl, dataBody) {
-  try {
-    const data = await axios
-    .get(requestUrl, {
-      data: dataBody
-    })
-    .then(response => {
-      return response.data;
-    });
-    return data;
-  } catch (error) {
-    if (error.response) {
-      console.log("API call failed: client response error: Code", error.response.status);
-    } else if (error.request) {
-      console.log("API call failed: client request error");
-    } else {
-      console.log("API call failed: unspecified error");
-    }
-    return {};
-  }
-}
-
-export const getStaticProps = async () => {
-  const baseUrl = 'http://localhost:8000';
-  const dateParams = {
-    "startDate": "2015-01-01",
-    "endDate": "2025-01-01"
+const getData = async (baseUrl = "") => {
+  const query: AxiosRequestConfig = {
+    method: 'post',
+    url: baseUrl + '/api/pageVisitsQuery',
+    headers: { 'Content-Type': 'application/json' },
   };
-  const loginData = await fetchData(baseUrl + '/loginTraffic', dateParams);
-  const printingData = await fetchData(baseUrl + '/printingAnalytics', dateParams);
-  const pageData = await fetchData(baseUrl + '/pageVisits', dateParams);
-  return {
-    props: {
-      fetchedLoginData: loginData,
-      fetchedPrintingData: printingData,
-      fetchedPageData: pageData
-    },
-  };
+  console.log("Testing");
+  const response = await axios(query);
+  console.log("Testing 2");
+  return response.data.data;
 };
 
-const OrangeTypography = withStyles({
+const PurpleTypography = withStyles({
   root: {
-    color: "#F6A5A5"
+    color: "#A5B7F6"
   }
 })(Typography);
 
-export default function CoreV4Page({ fetchedLoginData, fetchedPrintingData, fetchedPageData }) {
-const [loginData, setLoginData] = useState(fetchedLoginData);
-const [printingData, setPrintingData] = useState(fetchedPrintingData);
-const [pageData, setPageData] = useState(fetchedPageData);
+export default function CoreV4Page({ fetchedCommandData }) {
+const [commandData, setCommandData] = useState(fetchedCommandData);
+console.log("Printing sample command data:");
+try {
+  console.log(commandData);
+} catch (error) {
+  console.log("Data was not correctly fetched");
+}
 const darkMode = useDarkMode();
-
 return (
       <div>
         <div style={{ minHeight: "150px", width: '100%' }}>
           <Box display="flex">
             <Box flexGrow={1}>
               <Typography variant="h1" display="inline">SCE Analytics</Typography>
-              <OrangeTypography variant="h2" display="inline">&nbsp;Core-V4</OrangeTypography>
+              <PurpleTypography variant="h2" display="inline">&nbsp;Discord</PurpleTypography>
             </Box>
             <Box pt={7}>
             <Button onClick={darkMode.toggle}>Scheme</Button>
@@ -75,7 +51,7 @@ return (
             </Box>
           </Box>
           < br/>
-          < Divider style={{ background: "#F6A5A5" }}/>
+          < Divider style={{ background: "#A5B7F6" }}/>
         </div>
         <DropdownFrequency />
         < br/>
@@ -103,3 +79,12 @@ return (
       </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  const data = await pageVisitsQuery();
+  return {
+    props: {
+      fetchedCommandData: data
+    },
+  };
+};
