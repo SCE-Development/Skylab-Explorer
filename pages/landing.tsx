@@ -19,7 +19,7 @@ export default function Index(props: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async function (ctx) {
+export const getServerSideProps: GetServerSideProps<Props> = async function(ctx) {
   const user = parseUser(ctx);
 
   if (!user) {
