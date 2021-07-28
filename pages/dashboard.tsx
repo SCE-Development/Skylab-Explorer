@@ -6,6 +6,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import { makeStyles } from '@material-ui/styles';
 import DatePickers from '../Components/DatePickers';
+import { DashboardData } from './dashboarddata';
+import { DashboardCard } from './dashboardcard';
+
 const useStyles = makeStyles({
   whiteText: {
     color: 'white',
@@ -28,7 +31,6 @@ export default function Home() {
   const classes = useStyles();
 
   return (
-    // Building dashboard
     <Grid container direction="column" justify="center" alignItems="center" className={classes.whiteText}>
       <Grid item container direction="row" justify="space-between" alignItems="center">
         <Grid item>
@@ -59,60 +61,11 @@ export default function Home() {
         <CustomLineChart title={'Visits'} data={visits} xLabel="date" dataKey="quantity" />
       </Grid>
       <Grid item container direction="row" justify="flex-start" alignItems="center">
-        <CustomLineChart
-          title={'Visits'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Unique visitors'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Page Views'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Average Visit Durations'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Bounce Rate '}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Pages Per Visit'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
+        {DashboardData.map((object, dashboard) => (
+          // <Grid item>
+          <DashboardCard {...object} />
+          // </Grid>
+        ))}
       </Grid>
     </Grid>
   );
