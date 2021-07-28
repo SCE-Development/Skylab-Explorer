@@ -1,6 +1,5 @@
-import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import { Button, Typography } from '@material-ui/core';
+import { Button, Typography, AppBar } from '@material-ui/core';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import Box from '@material-ui/core/Box';
