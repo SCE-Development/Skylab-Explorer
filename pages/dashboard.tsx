@@ -61,10 +61,10 @@ export default function Home() {
         <CustomLineChart title={'Visits'} data={visits} xLabel="date" dataKey="quantity" />
       </Grid>
       <Grid item container direction="row" justify="flex-start" alignItems="center">
-        {DashboardData.map((object, dashboard) => (
-          // <Grid item>
-          <DashboardCard {...object} />
-          // </Grid>
+        {DashboardData.map((dashboard, key) => (
+          <Grid item key="key">
+            <DashboardCard {...dashboard} />
+          </Grid>
         ))}
       </Grid>
     </Grid>
