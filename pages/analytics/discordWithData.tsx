@@ -52,14 +52,8 @@ const PurpleTypography = withStyles({
 
 export default function CoreV4Page({ fetchedCommandData }) {
 const [commandData, setCommandData] = useState(fetchedCommandData);
-console.log("Printing sample command data:");
-try {
-  console.log("s!mute:", fetchedCommandData['s!mute']);
-  console.log("s!help:", fetchedCommandData['s!help']);
-} catch (error) {
-  console.log("Data was not correctly fetched");
-}
 const darkMode = useDarkMode();
+
 return (
       <div>
         <div style={{ minHeight: "150px", width: '100%' }}>

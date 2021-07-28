@@ -15,7 +15,7 @@ async function fetchData(requestUrl, dataBody) {
     })
     .then(response => {
       return response.data;
-    })
+    });
     return data;
   } catch (error) {
     if (error.response) {
@@ -57,15 +57,6 @@ export default function CoreV4Page({ fetchedLoginData, fetchedPrintingData, fetc
 const [loginData, setLoginData] = useState(fetchedLoginData);
 const [printingData, setPrintingData] = useState(fetchedPrintingData);
 const [pageData, setPageData] = useState(fetchedPageData);
-
-console.log("Printing sample corev4 data:");
-try {
-  console.log("Printing analytics: logging first date:", printingData.["Printing Analytics"][0]["EventDate"]);
-  console.log("Logging users printed:", printingData.["Printing Analytics"][0]["UsersPrinted"]);
-  console.log("Logging pages printed:", printingData.["Printing Analytics"][0]["PagesPrinted"]);
-} catch (error) {
-  console.log("Data was not correctly fetched");
-}
 const darkMode = useDarkMode();
 
 return (
