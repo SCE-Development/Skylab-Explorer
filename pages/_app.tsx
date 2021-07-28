@@ -7,20 +7,23 @@ import Head from 'next/head';
 import theme from '../styles/theme';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
-useEffect(() => {
-     // Remove the server-side injected CSS.
-   const jssStyles = document.querySelector('#jss-server-side');
-   if (jssStyles) {
-     jssStyles?.parentElement?.removeChild(jssStyles);
-   }
- }, []);
+  useEffect(() => {
+    // Remove the server-side injected CSS.
+    const jssStyles = document.querySelector('#jss-server-side');
+    if (jssStyles) {
+      jssStyles?.parentElement?.removeChild(jssStyles);
+    }
+  }, []);
 
   return (
     <>
       <Head>
-        <title>My App</title>
+        <title>Skylab</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"/>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        />
       </Head>
         <ThemeProvider theme={theme}>
           <CssBaseline />

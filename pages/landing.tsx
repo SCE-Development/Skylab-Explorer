@@ -1,15 +1,15 @@
 /* eslint-disable func-names */
 /* eslint-disable require-await */
 /* eslint-disable func-style */
-import { GetServerSideProps } from "next";
-import { DiscordUser } from "../types/auth";
-import { parseUser } from "../utils/parse-user";
+import { GetServerSideProps } from 'next';
+import { DiscordUser } from '../types/auth';
+import { parseUser } from '../utils/parse-user';
 
 interface Props {
   user: DiscordUser;
 }
 
-export default function Index(props : Props) {
+export default function Index(props: Props) {
   const { user } = props;
 
   return (
@@ -25,7 +25,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async function(ctx)
   if (!user) {
     return {
       redirect: {
-        destination: "/api/oauth",
+        destination: '/api/oauth',
         permanent: false,
       },
     };
