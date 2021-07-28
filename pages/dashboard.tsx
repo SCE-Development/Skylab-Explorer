@@ -1,3 +1,6 @@
+/* eslint-disable func-names */
+/* eslint-disable require-await */
+/* eslint-disable func-style */
 import Typography from '@material-ui/core/Typography';
 import { useState } from 'react';
 import CustomLineChart from '../Components/CustomLineChart';
@@ -17,7 +20,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Home({user}) {
+export default function Home({ user }) {
   const [visits, setVisits] = useState([
     { date: '11/28', quantity: 10 },
     { date: '11/29', quantity: 9 },
