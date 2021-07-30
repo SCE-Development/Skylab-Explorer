@@ -29,9 +29,7 @@ export const DashboardData = [
     total: '3000',
     dataKey: 'quantity',
   },
-  {
-    title: 'Printing Analytics',
-    total: '3000',
-    dataKey: 'quantity',
-  },
 ];
+// should only have data for one graph
+// one object per api call
+// page visits calls one api endpoint
