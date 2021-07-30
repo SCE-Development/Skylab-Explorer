@@ -144,12 +144,17 @@ const getStaticProps = async () => {
 })(Typography);
 
 export default function DiscordPage({ fetchedCommandData }) {
+<<<<<<< HEAD
 const [commandData, setCommandData] = useState(fetchedCommandData);
 <<<<<<< HEAD:pages/analytics/discordWithData.tsx
 =======
+=======
+  const [commandData, setCommandData] = useState(fetchedCommandData);
+>>>>>>> rebase and formatting
 
-console.log(commandData);
+  console.log(commandData);
 
+<<<<<<< HEAD
 >>>>>>> fix bugs:pages/analytics/testingDiscord.tsx
 const darkMode = useDarkMode();
 
@@ -160,41 +165,51 @@ return (
             <Box flexGrow={1}>
               <Typography variant="h1" display="inline">SCE Analytics</Typography>
               <PurpleTypography variant="h2" display="inline">&nbsp;Discord</PurpleTypography>
+=======
+  const darkMode = useDarkMode();
+  return (
+        <div>
+          <div style={{ minHeight: "150px", width: '100%' }}>
+            <Box display="flex">
+              <Box flexGrow={1}>
+                <Typography variant="h1" display="inline">SCE Analytics</Typography>
+                <PurpleTypography variant="h2" display="inline">&nbsp;Discord</PurpleTypography>
+              </Box>
+              <Box pt={7}>
+              <Button onClick={darkMode.toggle}>Scheme</Button>
+              </Box>
+              <Box pt={7} pl={3}>
+                <Button>Logout</Button>
+              </Box>
+>>>>>>> rebase and formatting
             </Box>
-            <Box pt={7}>
-            <Button onClick={darkMode.toggle}>Scheme</Button>
-            </Box>
-            <Box pt={7} pl={3}>
-              <Button>Logout</Button>
-            </Box>
-          </Box>
+            < br/>
+            < Divider style={{ background: "#A5B7F6" }}/>
+          </div>
+          <DropdownFrequency />
           < br/>
-          < Divider style={{ background: "#A5B7F6" }}/>
+          < br/>
+          < br/>
+          <Typography variant="h4">Key Metrics</Typography>
+          < br/>
+          < br/>
+          < br/>
+          <Grid container direction="row" justifyContent="flex-start" alignItems="center" spacing={10}>
+            <Grid item>
+              <CustomKeyMetric title="Commands Made" number={34} isUp={true} />
+            </Grid>
+            <Grid item>
+              <CustomKeyMetric title="Successful Commands" number={45} isUp={false} />
+            </Grid>
+            <Grid item>
+              <CustomKeyMetric title="Failed Commands" isUp={false} />
+            </Grid>
+          </Grid>
+          < br/>
+          < br/>
+          < br/>
+          <Typography variant="h4">Graphs</Typography>
         </div>
-        <DropdownFrequency />
-        < br/>
-        < br/>
-        < br/>
-        <Typography variant="h4">Key Metrics</Typography>
-        < br/>
-        < br/>
-        < br/>
-        <Grid container direction="row" justifyContent="flex-start" alignItems="center" spacing={10}>
-          <Grid item>
-            <CustomKeyMetric title="Commands Made" number={34} isUp={true} />
-          </Grid>
-          <Grid item>
-            <CustomKeyMetric title="Successful Commands" number={45} isUp={false} />
-          </Grid>
-          <Grid item>
-            <CustomKeyMetric title="Failed Commands" isUp={false} />
-          </Grid>
-        </Grid>
-        < br/>
-        < br/>
-        < br/>
-        <Typography variant="h4">Graphs</Typography>
-      </div>
   );
 }
 <<<<<<< HEAD:pages/analytics/discordWithData.tsx
