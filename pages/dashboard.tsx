@@ -4,16 +4,7 @@ import CustomLineChart from '../Components/CustomLineChart';
 import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-import { makeStyles } from '@material-ui/styles';
 import DatePickers from '../Components/DatePickers';
-const useStyles = makeStyles({
-  whiteText: {
-    color: 'white',
-  },
-  dateComponent: {
-    color: 'white',
-  },
-});
 
 export default function Home() {
   const [visits, setVisits] = useState([
@@ -25,17 +16,16 @@ export default function Home() {
   ]);
 
   const [startDate, setStartDate] = useState('2020-05-24');
-  const classes = useStyles();
 
   return (
     // Building dashboard
-    <Grid container direction="column" justify="center" alignItems="center" className={classes.whiteText}>
+    <Grid container direction="column" justify="center" alignItems="center">
       <Grid item container direction="row" justify="space-between" alignItems="center">
         <Grid item>
           <Typography variant="h3">Dashboard</Typography>
         </Grid>
         <Grid item>
-          <Select className={classes.whiteText} value={'last seven days'}>
+          <Select value={'last seven days'}>
             <MenuItem value={'last seven days'}>Last seven days</MenuItem>
             <MenuItem value={'last 2 weeks'}>Last 2 weeks</MenuItem>
           </Select>
