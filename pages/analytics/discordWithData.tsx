@@ -6,6 +6,7 @@ import CustomLineChart from "../../Components/CustomLineChart";
 import DropdownFrequency from "../../Components/DropdownFrequency";
 import axios, { AxiosRequestConfig } from "axios";
 import useDarkMode from 'use-dark-mode';
+import discordQuery from "../../lib/api/DiscordQuery";
 
 async function fetchData(requestUrl, dataBody) {
   try {
@@ -50,8 +51,11 @@ const PurpleTypography = withStyles({
   }
 })(Typography);
 
-export default function CoreV4Page({ fetchedCommandData }) {
+export default function DiscordPage({ fetchedCommandData }) {
 const [commandData, setCommandData] = useState(fetchedCommandData);
+
+console.log(commandData);
+
 const darkMode = useDarkMode();
 
 return (
@@ -98,3 +102,12 @@ return (
       </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const commandData = await discordQuery();
+  return {
+    props: {
+      fetchedCommandData: commandData
+    },
+  };
+};

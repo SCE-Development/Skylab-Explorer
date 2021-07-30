@@ -5760,6 +5760,7 @@ __metadata:
     axios: ^0.21.1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     cookie: ^0.4.1
 =======
 =======
@@ -5767,6 +5768,9 @@ __metadata:
 >>>>>>> added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page
 =======
 >>>>>>> added app light/dark toggle, fixed theme, added padding, restyled discord/corev4 and landing page
+=======
+    cookie: ^0.4.1
+>>>>>>> fix bugs
     eslint: ^7.26.0
     eslint-config-next: ^11.0.1
     eslint-plugin-react: latest
@@ -7730,7 +7734,11 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "semver@npm:2 || 3 || 4 || 5, semver@npm:^5.6.0":
+=======
+"semver@npm:^5.6.0":
+>>>>>>> fix bugs
   version: 5.7.1
   resolution: "semver@npm:5.7.1"
   bin:
