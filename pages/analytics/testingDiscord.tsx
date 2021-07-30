@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Divider, Box, CardContent, Card, Grid, Typography, Button } from '@material-ui/core';
 import { ThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/styles';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import CustomKeyMetric from '../../Components/CustomCardMetric';
 import CustomLineChart from '../../Components/CustomLineChart';
 import DropdownFrequency from '../../Components/DropdownFrequency';
@@ -10,11 +11,22 @@ import useDarkMode from 'use-dark-mode';
 import discordQuery from '../../lib/api/DiscordQuery';
 
 const getData = async (baseUrl = '') => {
+=======
+import CustomKeyMetric from "../../Components/CustomCardMetric";
+import CustomLineChart from "../../Components/CustomLineChart";
+import DropdownFrequency from "../../Components/DropdownFrequency";
+import axios, { AxiosRequestConfig } from "axios";
+import useDarkMode from 'use-dark-mode';
+import discordQuery from "../../lib/api/DiscordQuery";
+
+const getData = async (baseUrl = "") => {
+>>>>>>> fix bugs
   const query: AxiosRequestConfig = {
     method: 'post',
     url: baseUrl + '/api/pageVisitsQuery',
     headers: { 'Content-Type': 'application/json' },
   };
+<<<<<<< HEAD
   console.log('Testing');
   const response = await axios(query);
   console.log('Testing 2');
@@ -66,10 +78,17 @@ export const getStaticProps = async () => {
     },
   };
 >>>>>>> fix bugs
+=======
+  console.log("Testing");
+  const response = await axios(query);
+  console.log("Testing 2");
+  return response.data.data;
+>>>>>>> fix bugs
 };
 
 const PurpleTypography = withStyles({
   root: {
+<<<<<<< HEAD
 <<<<<<< HEAD
     color: '#A5B7F6',
   },
@@ -139,11 +158,14 @@ const getStaticProps = async () => {
   };
 };
 =======
+=======
+>>>>>>> fix bugs
     color: "#A5B7F6"
   }
 })(Typography);
 
 export default function DiscordPage({ fetchedCommandData }) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 const [commandData, setCommandData] = useState(fetchedCommandData);
 <<<<<<< HEAD:pages/analytics/discordWithData.tsx
@@ -158,6 +180,13 @@ const [commandData, setCommandData] = useState(fetchedCommandData);
 >>>>>>> fix bugs:pages/analytics/testingDiscord.tsx
 const darkMode = useDarkMode();
 
+=======
+const [commandData, setCommandData] = useState(fetchedCommandData);
+
+console.log(commandData);
+
+const darkMode = useDarkMode();
+>>>>>>> fix bugs
 return (
       <div>
         <div style={{ minHeight: "150px", width: '100%' }}>
@@ -165,6 +194,7 @@ return (
             <Box flexGrow={1}>
               <Typography variant="h1" display="inline">SCE Analytics</Typography>
               <PurpleTypography variant="h2" display="inline">&nbsp;Discord</PurpleTypography>
+<<<<<<< HEAD
 =======
   const darkMode = useDarkMode();
   return (
@@ -214,6 +244,45 @@ return (
 }
 <<<<<<< HEAD:pages/analytics/discordWithData.tsx
 =======
+=======
+            </Box>
+            <Box pt={7}>
+            <Button onClick={darkMode.toggle}>Scheme</Button>
+            </Box>
+            <Box pt={7} pl={3}>
+              <Button>Logout</Button>
+            </Box>
+          </Box>
+          < br/>
+          < Divider style={{ background: "#A5B7F6" }}/>
+        </div>
+        <DropdownFrequency />
+        < br/>
+        < br/>
+        < br/>
+        <Typography variant="h4">Key Metrics</Typography>
+        < br/>
+        < br/>
+        < br/>
+        <Grid container direction="row" justifyContent="flex-start" alignItems="center" spacing={10}>
+          <Grid item>
+            <CustomKeyMetric title="Commands Made" number={34} isUp={true} />
+          </Grid>
+          <Grid item>
+            <CustomKeyMetric title="Successful Commands" number={45} isUp={false} />
+          </Grid>
+          <Grid item>
+            <CustomKeyMetric title="Failed Commands" isUp={false} />
+          </Grid>
+        </Grid>
+        < br/>
+        < br/>
+        < br/>
+        <Typography variant="h4">Graphs</Typography>
+      </div>
+  );
+}
+>>>>>>> fix bugs
 
 export const getStaticProps = async () => {
   const commandData = await discordQuery();
@@ -223,5 +292,8 @@ export const getStaticProps = async () => {
     },
   };
 };
+<<<<<<< HEAD
 >>>>>>> fix bugs:pages/analytics/testingDiscord.tsx
+>>>>>>> fix bugs
+=======
 >>>>>>> fix bugs
