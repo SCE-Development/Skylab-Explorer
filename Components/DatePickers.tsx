@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(1),
     width: 200,
     color: 'primary',
-    background: '#2c2f33',
   },
 }));
 export default function DatePickers() {
