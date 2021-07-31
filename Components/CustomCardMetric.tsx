@@ -47,4 +47,3 @@ export default function CustomKeyMetric({ title = "Default title", number = 12, 
         </Card>
     );
 }
-

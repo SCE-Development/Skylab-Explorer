@@ -4,7 +4,21 @@ import { ThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/sty
 import CustomKeyMetric from "../../Components/CustomCardMetric";
 import CustomLineChart from "../../Components/CustomLineChart";
 import DropdownFrequency from "../../Components/DropdownFrequency";
+import axios, { AxiosRequestConfig } from "axios";
 import useDarkMode from 'use-dark-mode';
+import discordQuery from "../../lib/api/DiscordQuery";
+
+const getData = async (baseUrl = "") => {
+  const query: AxiosRequestConfig = {
+    method: 'post',
+    url: baseUrl + '/api/pageVisitsQuery',
+    headers: { 'Content-Type': 'application/json' },
+  };
+  console.log("Testing");
+  const response = await axios(query);
+  console.log("Testing 2");
+  return response.data.data;
+};
 
 const PurpleTypography = withStyles({
   root: {
@@ -12,14 +26,11 @@ const PurpleTypography = withStyles({
   }
 })(Typography);
 
-export default function DiscordPage() {
-  const [data, setData] = useState([
-    { date: '11/28', quantity: 10 },
-    { date: '11/29', quantity: 9 },
-    { date: '11/30', quantity: 6 },
-    { date: '12/1', quantity: 4 },
-    { date: '12/2', quantity: 15 },
-  ]);
+export default function DiscordPage({ fetchedCommandData }) {
+  const [commandData, setCommandData] = useState(fetchedCommandData);
+
+  console.log(commandData);
+
   const darkMode = useDarkMode();
   return (
         <div>
@@ -62,16 +73,15 @@ export default function DiscordPage() {
           < br/>
           < br/>
           <Typography variant="h4">Graphs</Typography>
-          <CustomLineChart
-            title={'Visits'}
-            total="3000"
-            data={data}
-            dataKey="quantity"
-            isYAxis={false}
-            width={400}
-            height={500}
-            xLabel="date"
-          />
         </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const commandData = await discordQuery();
+  return {
+    props: {
+      fetchedCommandData: commandData
+    },
+  };
+};

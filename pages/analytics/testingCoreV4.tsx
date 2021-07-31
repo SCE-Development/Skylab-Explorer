@@ -4,30 +4,33 @@ import { ThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/sty
 import CustomKeyMetric from "../../Components/CustomCardMetric";
 import CustomLineChart from "../../Components/CustomLineChart";
 import DropdownFrequency from "../../Components/DropdownFrequency";
+import axios, { AxiosRequestConfig } from "axios";
 import useDarkMode from 'use-dark-mode';
+import { getPageLoginData, getPrintingData, getPageVisitData } from "../../lib/api/CoreV4Query";
 
-const PurpleTypography = withStyles({
+const OrangeTypography = withStyles({
   root: {
-    color: "#A5B7F6"
+    color: "#F6A5A5"
   }
 })(Typography);
 
-export default function DiscordPage() {
-  const [data, setData] = useState([
-    { date: '11/28', quantity: 10 },
-    { date: '11/29', quantity: 9 },
-    { date: '11/30', quantity: 6 },
-    { date: '12/1', quantity: 4 },
-    { date: '12/2', quantity: 15 },
-  ]);
-  const darkMode = useDarkMode();
+export default function CoreV4Page({ fetchedPageLoginData, fetchedPrintingData, fetchedPageVisitData }) {
+  const [pageLoginData, setPageLoginData] = useState(fetchedPageLoginData);
+  const [printingData, setPrintingData] = useState(fetchedPrintingData);
+  const [pageVisitData, setPageVisitData] = useState(fetchedPageVisitData);
+
+  console.log(pageLoginData);
+  console.log(printingData);
+  console.log(pageVisitData);
+
+const darkMode = useDarkMode();
   return (
         <div>
           <div style={{ minHeight: "150px", width: '100%' }}>
             <Box display="flex">
               <Box flexGrow={1}>
                 <Typography variant="h1" display="inline">SCE Analytics</Typography>
-                <PurpleTypography variant="h2" display="inline">&nbsp;Discord</PurpleTypography>
+                <OrangeTypography variant="h2" display="inline">&nbsp;Core-V4</OrangeTypography>
               </Box>
               <Box pt={7}>
               <Button onClick={darkMode.toggle}>Scheme</Button>
@@ -37,7 +40,7 @@ export default function DiscordPage() {
               </Box>
             </Box>
             < br/>
-            < Divider style={{ background: "#A5B7F6" }}/>
+            < Divider style={{ background: "#F6A5A5" }}/>
           </div>
           <DropdownFrequency />
           < br/>
@@ -62,16 +65,19 @@ export default function DiscordPage() {
           < br/>
           < br/>
           <Typography variant="h4">Graphs</Typography>
-          <CustomLineChart
-            title={'Visits'}
-            total="3000"
-            data={data}
-            dataKey="quantity"
-            isYAxis={false}
-            width={400}
-            height={500}
-            xLabel="date"
-          />
         </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const pageLoginData = await getPageLoginData();
+  const printingData = await getPrintingData();
+  const pageVisitData = await getPageVisitData();
+  return {
+    props: {
+      fetchedPageLoginData: pageLoginData,
+      fetchedPrintingData: printingData,
+      fetchedPageVisitData: pageVisitData
+    },
+  };
+};
