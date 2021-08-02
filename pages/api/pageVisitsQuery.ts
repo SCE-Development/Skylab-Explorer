@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import axios from 'axios';
-import pageVisitsQuery from "../../lib/api/dataQuery";
+import {} from "../../lib/api/CoreV4Query";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {

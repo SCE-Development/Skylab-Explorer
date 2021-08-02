@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     }
 });
 
-export default function CustomKeyMetric({ title = "Default title", number = 12, isUp }) {
+export default function CustomKeyMetric({ title = "Default title", number = 0, isUp }) {
     const style = useStyles();
     return(
         <Card>
