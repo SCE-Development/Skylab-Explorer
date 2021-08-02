@@ -40,7 +40,8 @@ export default function CustomBarChart({
           // if you want to display YAxis or not
           isYAxis && <YAxis />
         }
-        <Tooltip content={<CustomTooltip />} />
+        {/* <Tooltip content={<CustomTooltip />} /> */}
+        <Tooltip />
       </BarChart>
     </div>
   );

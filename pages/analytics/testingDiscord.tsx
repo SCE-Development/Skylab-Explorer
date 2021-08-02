@@ -31,8 +31,8 @@ const getDataWithFetch = async (startDate, endDate) => {
   method: 'POST',
   body: JSON.stringify(
     {
-      'startDate': startDate,
-      'endDate': endDate
+      startDate,
+      endDate
     }),
   headers: {
     'Content-Type': 'application/json',
@@ -48,29 +48,22 @@ const PurpleTypography = withStyles({
 })(Typography);
 
 export default function DiscordPage({ fetchedCommandData }) {
-
   const [commandData, setCommandData] = useState(fetchedCommandData);
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
 
-  useEffect( async () => {
+  useEffect(async () => {
     const fetchedCommands = await getDataWithFetch(startDate, endDate);
     console.log(fetchedCommands);
     setCommandData(fetchedCommands);
   }, [startDate]);
 
 
-  useEffect( async () => {
+  useEffect(async () => {
     const fetchedCommands = await getDataWithFetch(startDate, endDate);
     console.log(fetchedCommands);
     setCommandData(fetchedCommands);
   }, [startDate]);
-
-  useEffect( async () => {
-    const fetchedCommands = await getDataWithFetch(dates["startDate"], dates["endDate"]);
-    console.log(fetchedCommands);
-    setPrintingAnalyticsData(fetchedCommands);
-  }, [dates]);
 
   const startDateCallback = useCallback((date) => {
     setStartDate(date);
@@ -157,6 +150,7 @@ export default function DiscordPage({ fetchedCommandData }) {
 }
 
 export const getStaticProps = async () => {
+  const [startDate, endDate] = getInitialDates();
   let commandData = await discordQuery(startDate, endDate);
   commandData = JSON.parse(commandData);
   return {
