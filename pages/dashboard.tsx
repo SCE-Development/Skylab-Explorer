@@ -1,10 +1,11 @@
 import Typography from '@material-ui/core/Typography';
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import CustomLineChart from '../Components/CustomLineChart';
 import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import DatePickers from '../Components/DatePickers';
+// import getInitialDates from "../utils/DateUtils";
 
 export default function Home() {
   const [visits, setVisits] = useState([
@@ -15,7 +16,24 @@ export default function Home() {
     { date: '12/2', quantity: 15 },
   ]);
 
-  const [startDate, setStartDate] = useState('2020-05-24');
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
+
+  useEffect(() => {
+    console.log("Start date is now", startDate);
+  }, [startDate]);
+
+  useEffect(() => {
+    console.log("End date is now", endDate);
+  }, [endDate]);
+
+  const startDateCallback = useCallback((date) => {
+    setStartDate(date);
+  });
+
+  const endDateCallback = useCallback((date) => {
+     setEndDate(date);
+  });
 
   return (
     // Building dashboard
@@ -36,13 +54,13 @@ export default function Home() {
           <h5>From </h5>
         </Grid>
         <Grid item>
-          <DatePickers></DatePickers>
+          <DatePickers dateCallback={startDateCallback} />
         </Grid>
         <Grid item>
           <h5>To </h5>
         </Grid>
         <Grid item>
-          <DatePickers></DatePickers>
+         <DatePickers dateCallback={endDateCallback} />
         </Grid>
       </Grid>
       <Grid item>
