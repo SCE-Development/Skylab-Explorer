@@ -24,7 +24,7 @@
         + Will make it so that every components have their own folder later
     - /utils: Contains ultility methods, functions for logic layer
     - /lib/api: API calls to backend
-    - __test__: test directory
+    - `__test__`: test directory
     
 7. Future testing work
 
