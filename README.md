@@ -6,8 +6,8 @@
     - Recharts libraries for graphs
 3. Set up the repo:
     - Have node installed
-    - Clone the repo: *git clone https://github.com/SCE-Development/Skylab-Explorer.git *
-    - Install yarn via npm *npm install --global yarn *
+    - Clone the repo: _git clone https://github.com/SCE-Development/Skylab-Explorer.git_
+    - Install yarn via npm _npm install --global yarn_
     - Use yarn to install packages
 4. How to run the repo:
     - Use yarn to run the repo
