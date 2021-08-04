@@ -19,7 +19,10 @@
     - Make a new branch whenever you are implementing/fixing something
     - If it works, make a pull request to the main branch
 6. The structure of our repo
-
+    - /pages:
+    - /Components:
+    - /utils:
+    
 7. Future testing work
 
 
