@@ -46,6 +46,7 @@
     "@typescript-eslint/parser": "latest",
     "@yarnpkg/pnpify": "^3.0.0-rc.3",
     "eslint": "^7.26.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-plugin-react": "latest",
     "eslint-plugin-react-hooks": "latest",
     "husky": "^6.0.0",
