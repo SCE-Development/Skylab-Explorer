@@ -1,7 +1,7 @@
 # Skylab Explorer
 This repo is part of SJSU SCE club summer 2021 internship project. This is the frontend displaying data from data warehouse
 ## Details
-### 1. Tech stack we use:
+Tech stack we use:
 
     * NextJS with Typescript and Yarn for package manager instead of NPM
     * We are using yarn 1 since yarn 2 is unstable with our tech stack
