@@ -11,11 +11,11 @@ This repo is part of SJSU SCE club summer 2021 internship project. This is the f
 * Install yarn via npm `npm install --global yarn`
 * Use yarn to install packages from package.json file `yarn add`
 * __Configure .env file__
-+ Create .env file and include that in .gitignore file
-+ For development mode to work, it needs three values: CLIENT_ID, CLIENT_SECRET and APP_URI
-+ CLIENT_ID and CLIENT_SECRET are the discord app you want to use Discord login through
-+ APP_URI is something I forgot but needed
-+ For deploy mode, .env also needs JWT_SECRET which can be anything you want
+  + Create .env file and include that in .gitignore file
+  + For development mode to work, it needs three values: CLIENT_ID, CLIENT_SECRET and APP_URI
+  + CLIENT_ID and CLIENT_SECRET are the discord app you want to use Discord login through
+  + APP_URI is something I forgot but needed
+  + For deploy mode, .env also needs JWT_SECRET which can be anything you want
 ## 3. How to run the repo:
 * Use yarn to run the repo in devevelopment mode: `yarn dev`
 * Run with docker: `need instruction`
