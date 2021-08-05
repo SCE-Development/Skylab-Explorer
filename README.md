@@ -18,12 +18,12 @@
     - Make a new branch whenever you are implementing/fixing something `git checkout -b [branchName]`
     - If it works, push the code then make a pull request to the main branch
 6. The structure of our repo
-    - /pages: This is where all the pages of the app. By NextJS, directory under this folder become their own page
+    - `/pages`: This is where all the pages of the app. By NextJS, directory under this folder become their own page
         + Ex: /pages/dashboard can be access through `localhost:3000/dashboard`
-    - /Components: Contains components that make up pages, will change to /components later
+    - `/Components`: Contains components that make up pages, will change to /components later
         + Will make it so that every components have their own folder later
-    - /utils: Contains ultility methods, functions for logic layer
-    - /lib/api: API calls to backend
+    - `/utils`: Contains ultility methods, functions for logic layer
+    - `/lib/api`: API calls to backend
     - `__test__`: test directory
     
 7. Future testing work
