@@ -3,9 +3,9 @@ This repo is part of SJSU SCE club summer 2021 internship project. This is the f
 ## Details
 ### 1. Tech stack we use:
 
-    1. NextJS with Typescript and Yarn for package manager instead of NPM
-    2. We are using yarn 1 since yarn 2 is unstable with our tech stack
-    3. Recharts libraries for graphs
+    * NextJS with Typescript and Yarn for package manager instead of NPM
+    * We are using yarn 1 since yarn 2 is unstable with our tech stack
+    * Recharts libraries for graphs
 ### 2. Set up the repo:
 
     1 Have node installed
