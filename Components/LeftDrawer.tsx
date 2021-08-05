@@ -1,17 +1,21 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Divider from '@material-ui/core/Divider';
-import Drawer from '@material-ui/core/Drawer';
-import IconButton from '@material-ui/core/IconButton';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
-import { makeStyles, useTheme, Theme, createStyles } from '@material-ui/core/styles';
 import Router from 'next/router';
+import {
+  AppBar,
+  Divider,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+  Toolbar,
+  Typography,
+  makeStyles,
+  useTheme,
+  Theme,
+  createStyles,
+} from '@material-ui/core';
 
 const drawerWidth = 240;
 const useStyles = makeStyles({

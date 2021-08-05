@@ -32,10 +32,10 @@ export default function Home() {
   return (
     // Building dashboard
     <Grid container spacing={3}>
-      <Grid item xs={2.5}>
+      <Grid item xs={2}>
         <LeftDrawer />
       </Grid>
-      <Grid item xs={9}>
+      <Grid item xs={10}>
         <Grid container direction="row" justify="space-between" alignItems="center">
           <Grid item>
             <Typography variant="h3">Dashboard</Typography>

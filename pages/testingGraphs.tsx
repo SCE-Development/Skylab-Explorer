@@ -10,6 +10,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import { makeStyles } from '@material-ui/styles';
 import DatePickers from '../Components/DatePickers';
+import LeftDrawer from '../Components/LeftDrawer';
+
 const useStyles = makeStyles({
   whiteText: {
     color: 'white',
@@ -33,91 +35,96 @@ export default function Tester() {
 
   return (
     // Building dashboard
-    <Grid container direction="column" justify="center" alignItems="center" className={classes.whiteText}>
-      <Grid item container direction="row" justify="space-between" alignItems="center">
-        <Grid item>
-          <Typography variant="h3">Testing Graphs</Typography>
-        </Grid>
-        <Grid item>
-          <Select className={classes.whiteText} value={'last seven days'}>
-            <MenuItem value={'last seven days'}>Last seven days</MenuItem>
-            <MenuItem value={'last 2 weeks'}>Last 2 weeks</MenuItem>
-          </Select>
-        </Grid>
+    <Grid container spacing={3}>
+      <Grid item xs={2}>
+        <LeftDrawer />
       </Grid>
-      <Grid item container direction="row" justify="center" alignItems="center">
-        <Grid item>
-          <h5>From </h5>
+      <Grid item xs={10}>
+        <Grid item container direction="row" justify="space-between" alignItems="center">
+          <Grid item>
+            <Typography variant="h3">Testing Graphs</Typography>
+          </Grid>
+          <Grid item>
+            <Select className={classes.whiteText} value={'last seven days'}>
+              <MenuItem value={'last seven days'}>Last seven days</MenuItem>
+              <MenuItem value={'last 2 weeks'}>Last 2 weeks</MenuItem>
+            </Select>
+          </Grid>
         </Grid>
-        <Grid item>
-          <DatePickers></DatePickers>
+        <Grid item container direction="row" justify="center" alignItems="center">
+          <Grid item>
+            <h5>From </h5>
+          </Grid>
+          <Grid item>
+            <DatePickers></DatePickers>
+          </Grid>
+          <Grid item>
+            <h5>To </h5>
+          </Grid>
+          <Grid item>
+            <DatePickers></DatePickers>
+          </Grid>
         </Grid>
-        <Grid item>
-          <h5>To </h5>
+        <Grid>
+          <CustomPieChart title={'Visits'} data={visits} dataKey="quantity" />
+          <CustomAreaChart title={'Visits'} data={visits} dataKey="quantity" />
         </Grid>
-        <Grid item>
-          <DatePickers></DatePickers>
+        <Grid item container direction="row" justify="flex-start" alignItems="center">
+          <CustomLineChart
+            title={'Visits'}
+            total="3000"
+            data={visits}
+            dataKey="quantity"
+            isYAxis={false}
+            width={200}
+            height={100}
+          />
+          <CustomLineChart
+            title={'Unique visitors'}
+            total="3000"
+            data={visits}
+            dataKey="quantity"
+            isYAxis={false}
+            width={200}
+            height={100}
+          />
+          <CustomLineChart
+            title={'Page Views'}
+            total="3000"
+            data={visits}
+            dataKey="quantity"
+            isYAxis={false}
+            width={200}
+            height={100}
+          />
+          <CustomLineChart
+            title={'Average Visit Durations'}
+            total="3000"
+            data={visits}
+            dataKey="quantity"
+            isYAxis={false}
+            width={200}
+            height={100}
+          />
+          <CustomLineChart
+            title={'Bounce Rate '}
+            total="3000"
+            data={visits}
+            dataKey="quantity"
+            isYAxis={false}
+            width={200}
+            height={100}
+          />
+          <CustomLineChart
+            title={'Pages Per Visit'}
+            total="3000"
+            data={visits}
+            dataKey="quantity"
+            isYAxis={false}
+            width={200}
+            height={100}
+          />
         </Grid>
-      </Grid>
-      <Grid>
-        <CustomPieChart title={'Visits'} data={visits} dataKey="quantity" />
-        <CustomAreaChart title={'Visits'} data={visits} dataKey="quantity" />
-      </Grid>
-      <Grid item container direction="row" justify="flex-start" alignItems="center">
-        <CustomLineChart
-          title={'Visits'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Unique visitors'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Page Views'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Average Visit Durations'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Bounce Rate '}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
-        <CustomLineChart
-          title={'Pages Per Visit'}
-          total="3000"
-          data={visits}
-          dataKey="quantity"
-          isYAxis={false}
-          width={200}
-          height={100}
-        />
       </Grid>
     </Grid>
   );

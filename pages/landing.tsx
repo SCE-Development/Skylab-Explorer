@@ -9,7 +9,7 @@ interface Props {
   user: DiscordUser;
 }
 
-export default function Index(props: Props) {
+export default function Landing(props: Props) {
   const { user } = props;
 
   return (
