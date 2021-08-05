@@ -17,8 +17,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     }
   }, []);
 
-const { value: isDark } = useDarkMode();
-const themeConfig = isDark ? darkTheme : lightTheme;
+  const { value: isDark } = useDarkMode();
+  const themeConfig = isDark ? darkTheme : lightTheme;
 
   return (
     <>
@@ -31,10 +31,10 @@ const themeConfig = isDark ? darkTheme : lightTheme;
         />
       </Head>
       <ThemeProvider theme={themeConfig}>
-          <Box pl={7} pr={7} pt={5} pb={5}>
-            <CssBaseline />
-            <Component {...pageProps} />
-          </Box>
+        <Box pl={7} pr={7} pt={5} pb={5}>
+          <CssBaseline />
+          <Component {...pageProps} />
+        </Box>
       </ThemeProvider>
     </>
   );
