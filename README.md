@@ -1,15 +1,14 @@
 # Skylab Explorer
 This repo is part of SJSU SCE club summer 2021 internship project. This is the frontend displaying data from data warehouse
-## Details
 ### Tech stack we use:
     1. NextJS with Typescript and Yarn for package manager instead of NPM
-    1. We are using yarn 1 since yarn 2 is unstable with our tech stack
-    1. Recharts libraries for graphs
+    2. We are using yarn 1 since yarn 2 is unstable with our tech stack
+    3. Recharts libraries for graphs
 ### Set up the repo:
-    - Have node installed
-    - Clone the repo:  `git clone https://github.com/SCE-Development/Skylab-Explorer.git_`
-    - Install yarn via npm `npm install --global yarn`
-    - Use yarn to install packages from package.json file `yarn add`
+    1 Have node installed
+    2 Clone the repo:  `git clone https://github.com/SCE-Development/Skylab-Explorer.git_`
+    3 Install yarn via npm `npm install --global yarn`
+    4 Use yarn to install packages from package.json file `yarn add`
 ### How to run the repo:
     - Use yarn to run the repo in devevelopment mode: `yarn dev`
     - Run with docker: `need instruction`
