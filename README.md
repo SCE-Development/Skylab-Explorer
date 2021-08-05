@@ -2,7 +2,6 @@
 This repo is part of SJSU SCE club summer 2021 internship project. This is the frontend displaying data from data warehouse
 
 ## 1. Tech stack we use:
-
 * NextJS with Typescript and Yarn for package manager instead of NPM
 * We are using yarn 1 since yarn 2 is unstable with our tech stack
 * Recharts libraries for graphs
@@ -11,6 +10,12 @@ This repo is part of SJSU SCE club summer 2021 internship project. This is the f
 * Clone the repo:  `git clone https://github.com/SCE-Development/Skylab-Explorer.git_`
 * Install yarn via npm `npm install --global yarn`
 * Use yarn to install packages from package.json file `yarn add`
+* __Configure .env file **
+* Create .env file and include that in .gitignore file
+* For development mode to work, it needs three values: CLIENT_ID, CLIENT_SECRET and APP_URI
+* CLIENT_ID and CLIENT_SECRET are the discord app you want to use Discord login through
+* APP_URI is something I forgot but needed
+* For deploy mode, .env also needs JWT_SECRET which can be anything you want
 ## 3. How to run the repo:
 * Use yarn to run the repo in devevelopment mode: `yarn dev`
 * Run with docker: `need instruction`
@@ -27,7 +32,6 @@ This repo is part of SJSU SCE club summer 2021 internship project. This is the f
 * `/utils`: Contains ultility methods, functions for logic layer
 * `/lib/api`: API calls to backend
 * `__test__`: test directory
-    
-Future testing work
+## Future testing work
 
 
