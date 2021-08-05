@@ -23,7 +23,7 @@ This repo is part of SJSU SCE club summer 2021 internship project. This is the f
 * You can fix stuff mentioned in issues
 * Make a new branch whenever you are implementing/fixing something `git checkout -b [branchName]`
 * If it works, push the code then make a pull request to the main branch
-5. The structure of our repo
+## 5. The structure of our repo
 * `/pages`: This is where all the pages of the app. By NextJS, directory under this folder become their own page
   + Ex: /pages/dashboard can be access through `localhost:3000/dashboard`
 * `/Components`: Contains components that make up pages, will change to /components later
