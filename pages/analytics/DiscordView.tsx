@@ -1,51 +1,55 @@
 import React, { useState } from 'react';
 import { Divider, Box, CardContent, Card, Grid, Typography, Button } from '@material-ui/core';
 import { ThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/styles';
-import CustomKeyMetric from "../../Components/CustomCardMetric";
-import CustomLineChart from "../../Components/CustomLineChart";
-import DropdownFrequency from "../../Components/DropdownFrequency";
+import CustomKeyMetric from '../../Components/CustomCardMetric';
+import CustomLineChart from '../../Components/CustomLineChart';
+import DropdownFrequency from '../../Components/DropdownFrequency';
 import useDarkMode from 'use-dark-mode';
 
 const PurpleTypography = withStyles({
   root: {
-    color: "#A5B7F6"
-  }
+    color: '#A5B7F6',
+  },
 })(Typography);
 export default function DiscordPage() {
-const [data, setData] = useState([
-  { date: '11/28', quantity: 10 },
-  { date: '11/29', quantity: 9 },
-  { date: '11/30', quantity: 6 },
-  { date: '12/1', quantity: 4 },
-  { date: '12/2', quantity: 15 },
-]);
-const darkMode = useDarkMode();
-return (
-      <div>
-      <div style={{ minHeight: "150px", width: '100%' }}>
+  const [data, setData] = useState([
+    { date: '11/28', quantity: 10 },
+    { date: '11/29', quantity: 9 },
+    { date: '11/30', quantity: 6 },
+    { date: '12/1', quantity: 4 },
+    { date: '12/2', quantity: 15 },
+  ]);
+  const darkMode = useDarkMode();
+  return (
+    <div>
+      <div style={{ minHeight: '150px', width: '100%' }}>
         <Box display="flex">
           <Box flexGrow={1}>
-            <Typography variant="h1" display="inline">SCE Analytics</Typography>
-            <PurpleTypography variant="h2" display="inline">&nbsp;Discord</PurpleTypography>
+            <Typography variant="h1" display="inline">
+              SCE Analytics
+            </Typography>
+            <PurpleTypography variant="h2" display="inline">
+              &nbsp;Discord
+            </PurpleTypography>
           </Box>
           <Box pt={7}>
-          <Button onClick={darkMode.toggle}>Scheme</Button>
+            <Button onClick={darkMode.toggle}>Scheme</Button>
           </Box>
           <Box pt={7} pl={3}>
             <Button>Logout</Button>
           </Box>
         </Box>
-        < br/>
-        < Divider style={{ background: "#A5B7F6" }}/>
+        <br />
+        <Divider style={{ background: '#A5B7F6' }} />
       </div>
       <DropdownFrequency />
-      < br/>
-      < br/>
-      < br/>
+      <br />
+      <br />
+      <br />
       <Typography variant="h4">Key Metrics</Typography>
-      < br/>
-      < br/>
-      < br/>
+      <br />
+      <br />
+      <br />
       <Grid container direction="row" justifyContent="flex-start" alignItems="center" spacing={10}>
         <Grid item>
           <CustomKeyMetric title="Commands Made" number={34} isUp={true} />
@@ -57,11 +61,12 @@ return (
           <CustomKeyMetric title="Failed Commands" isUp={false} />
         </Grid>
       </Grid>
-      < br/>
-      < br/>
-      < br/>
+      <br />
+      <br />
+      <br />
       <Typography variant="h4">Graphs</Typography>
       <CustomLineChart
+        dataKey2={0}
         title={'Visits'}
         total="3000"
         data={data}
@@ -71,6 +76,6 @@ return (
         height={500}
         xLabel="date"
       />
-      </div>
+    </div>
   );
 }

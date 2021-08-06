@@ -1,13 +1,12 @@
 import axios from 'axios';
-import { ApiResponse } from './/apiResponses.js';
 
 export async function getPrintPlots(start_date, end_date, baseUrl = 'http://localhost:8000') {
-  let status = new ApiResponse();
+  const status = { data: [], error: false };
 
   await axios
     .post(baseUrl + '/printingAnalytics', { data: { start_date, end_date } })
     .then((res) => {
-      status = res.data.Data;
+      status.data = res.data.Data;
     })
     .catch(() => {
       status.error = true;
@@ -17,12 +16,12 @@ export async function getPrintPlots(start_date, end_date, baseUrl = 'http://loca
 }
 
 export async function getLoginPlots(start_date, end_date, baseUrl = 'http://localhost:8000') {
-  let status = new ApiResponse();
+  const status = { data: [], error: false };
 
   await axios
     .post(baseUrl + '/loginTraffic', { data: { start_date, end_date } })
     .then((res) => {
-      status = res.data.Data;
+      status.data = res.data.Data;
     })
     .catch(() => {
       status.error = true;

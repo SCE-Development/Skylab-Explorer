@@ -20,7 +20,7 @@ export default function DatePickers({ dateCallback }) {
 
   useEffect(() => {
     dateCallback(date);
-  }, [date]);
+  }, [date, dateCallback]);
 
   return (
     <form className={classes.container} noValidate>

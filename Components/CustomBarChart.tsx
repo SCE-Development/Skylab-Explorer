@@ -6,7 +6,7 @@ import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, LabelList } from '
    docs: https://recharts.org/en-US/api/LineChart
 */
 
-const CustomTooltip = ({ active, payload, label }) => {
+const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
     return (
       <div className="custom-tooltip">
