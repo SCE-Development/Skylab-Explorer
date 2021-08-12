@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 const useStyles = makeStyles((theme) => ({
@@ -10,12 +10,17 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: 200,
-    color: 'primary',
+    // color: 'primary',
+    // background: '#2c2f33',
   },
 }));
-export default function DatePickers() {
+export default function DatePickers({ dateCallback }) {
   const classes = useStyles();
-  const [date, setDate] = useState('2020-05-28');
+  const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
+
+  useEffect(() => {
+    dateCallback(date);
+  }, [date, dateCallback]);
 
   return (
     <form className={classes.container} noValidate>

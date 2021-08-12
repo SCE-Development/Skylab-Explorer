@@ -1,9 +1,6 @@
  import axios from "axios";
- import getInitialDates from "../../utils/DateUtils";
 
- const [startDate, endDate] = getInitialDates();
-
- const getCommandData = async () => {
+ const getCommandData = async (startDate, endDate) => {
   const data = await axios
     .get('http://localhost:8000/commandcallcount', {
       data: {

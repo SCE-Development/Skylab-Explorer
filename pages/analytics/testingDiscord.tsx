@@ -82,7 +82,7 @@ export default function DiscordPage({ fetchedCommandData }) {
 }
 
 const getStaticProps = async () => {
-  const commandData = await discordQuery();
+  const commandData = await discordQuery(Date.now(), Date.now());
   return {
     props: {
       fetchedCommandData: commandData,

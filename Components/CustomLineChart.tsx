@@ -1,4 +1,4 @@
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
 /* custom line chart and you can pass different customization to it
    something is that we need to pass width and height number to line chart
@@ -12,7 +12,8 @@ export default function CustomLineChart({
   xLabel = '',
   isYAxis = true,
   dataKey,
-  width = 1000,
+  dataKey2,
+  width = 750,
   height = 300,
 }) {
   return (
@@ -20,14 +21,17 @@ export default function CustomLineChart({
       <h1>{title}</h1>
       <h2>{total}</h2>
       <LineChart data={data} width={width} height={height}>
-        <CartesianGrid stroke="#ccc" />
+        <CartesianGrid stroke="#CCC" />
+        <Line type="monotone" dataKey={dataKey2} stroke="#B0E0E6" />
         <Line type="monotone" dataKey={dataKey} stroke="#8884d8" />
         <XAxis dataKey={xLabel} />
         {
           // if you want to display YAxis or not
           isYAxis && <YAxis />
         }
+
         <Tooltip />
+        <Legend verticalAlign="top" height={36} />
       </LineChart>
     </div>
   );

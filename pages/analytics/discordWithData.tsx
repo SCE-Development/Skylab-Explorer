@@ -51,8 +51,8 @@ const PurpleTypography = withStyles({
 })(Typography);
 
 export default function CoreV4Page({ fetchedCommandData }) {
-  const [commandData, setCommandData] = useState(fetchedCommandData);
-  const darkMode = useDarkMode();
+const [commandData, setCommandData] = useState(fetchedCommandData);
+const darkMode = useDarkMode();
 
 return (
       <div>
