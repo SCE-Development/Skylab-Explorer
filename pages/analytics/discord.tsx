@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 import CustomKeyMetric from '../../Components/CustomKeyMetric';
 import CustomLineChart from '../../Components/CustomLineChart';
+import DropdownFrequency from '../../Components/DropdownFrequency';
 import { Grid } from '@material-ui/core';
 import { useState } from 'react';
-=======
-import CustomKeyMetric from "../../Components/CustomKeyMetric";
-import CustomLineChart from "../../Components/CustomLineChart";
-import DropdownFrequency from "../../Components/DropdownFrequency";
-import { Grid } from "@material-ui/core";
-import { useState } from "react";
-import DiscordAppBar from "../../Components/DiscordAppBar";
->>>>>>> implemented theme and headers (#30)
+import DiscordAppBar from '../../Components/DiscordAppBar';
 
 export default function AnalyticsDiscord() {
   const [data, setData] = useState([
