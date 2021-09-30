@@ -1,9 +1,16 @@
 # Front-End Analytics Dashboard
-Establishes end-to-end connection with back-end database and pipelines. 
+Establishes end-to-end connection with Skylab-pipeline and delivers aggregated data by calling API endpoints. 
 
-Clients can select desired time frame on dashboard to have aggregated data graphed in real time.
+Clients can select desired time frame on dashboard to have data graphed in real time.
+
+
+## Set up Dashboard Development
+1) Run pipeline server
+2) Run `yarn dev` to start nextJS development server
+3) Launch dashboard and select dates to query
 
 ## Core-v4 Dashboard
-![](https://awesomescreenshot.s3.amazonaws.com/image/2417040/14039715-1268d609bd08a9ad9c6a68a9f2f846df.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20210926%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210926T234201Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=f659c58443f2c295a1c854fb1e4d31e125b2186d449cdb89164418495bb5338e)
+![corev4](https://user-images.githubusercontent.com/63386979/135536483-ebb5cf0b-fcf9-4f80-917c-e857f2896d8c.gif)
 
-## Discord Bot Dashboard
+## Discord Dashboard
+![discordGraphs](https://user-images.githubusercontent.com/63386979/135536184-d8dd601a-309c-4c99-90b2-c66a39d861ec.gif)
